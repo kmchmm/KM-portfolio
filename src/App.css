@@ -1,38 +1,428 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+/***********************************/
+/***********************************/
+/************main classes***********/
+/***********************************/
+/***********************************/
+
+:root {
+  --main-font-family: "Montserrat", sans-serif;
+  --second-font-family: "Open Sans", sans-serif;
+  --main-color: #131313;
+  --third-color: #fca311;
+  --fourth-color: #131313;
+  --first-font-color: #ffffff;
+  --secondary-font-color: #e5e5e5;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .App {
+  max-height: 100%;
+  height: auto;
+  max-width: 100%;
+  width: 100%;
+  background-color: var(--main-color);
+  font-family: var(--main-font-family);
+  color: var(--first-font-color);
+}
+
+.App a {
+  color: var(--first-font-color);
+  text-decoration: none;
+}
+.App li {
+  list-style: none;
+}
+.App button {
+  font-family: var(--main-font-family);
+  cursor: pointer;
+}
+
+.sec-home,
+.sec-about,
+.sec-project,
+.sec-contact {
+  max-width: 100%;
+  width: 100%;
+}
+
+.about-head-icon,
+.project-head-icon,
+.company-head-icon {
+  font-size: 3rem;
+}
+
+
+.ahref{
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  color: var(--first-font-color);
+}
+
+  
+/***********************************/
+/*****************Nav***************/
+/***********************************/
+
+.App header {
+  position: fixed;
+  max-width: 100%;
+  width: 100%;
+  background-color: var(--main-color);
+  z-index: 100;
+}
+.App nav {
+  max-width: 90%;
+  height: 10vh;
+  align-items: center;
+  margin: auto;
+}
+.nav-image-container{
+  max-width: 90px;
+  width: 100%;
+  height: 100%;
+    object-fit: contain;
+}
+.nav-image-container img{
+  width: 100%;
+  object-fit: contain;
+}
+.navigation-links li {
+  margin: 0 1em;
+}
+.App nav a {
+  font-weight: 600;
+  font-size: 1rem;
+}
+.App nav a:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  color: var(--first-font-color);
+}
+
+.hamburger {
+  margin-right: 1em;
+  display: none;
+}
+
+.hamburger li {
+  background-color: transparent;
+  height: auto;
+  width: 100%;
+  display: block;
+  margin: 0 1em;
+  cursor: pointer;
+}
+
+.hamburger li div{
+  background-color: var(--first-font-color);
+  height: 3px;
+  margin: 5px 0;
+}
+/***********************************/
+/************HOME SECTION***********/
+/***********************************/
+
+.sec-about {
+  position: relative;
+}
+.home-container {
+  width: 90%;
+  margin: 0 auto;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.home-container-left {
+  width: 100%;
+  padding: 0 1em;
+}
+.home-container h1 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.home-container p {
+  font-family: var(--second-font-family);
+  margin: 1em 0;
+}
+.btn-wrapper{
+  max-width: 100%;
+  width: 80%;
+  gap: 1em;
+}
+.btn-wrapper a{
+  max-width: 100%;
+  width: 100%;
+}
+.btn-wrapper button {
+  background-color: var(--main-color);
+  color: var(--first-font-color);
+  border: 1px solid var(--first-font-color);
+  margin: 1em 0 0;
+  padding: 1em 2em;
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+  letter-spacing: 0.2em;
+  max-width: 100%;
+  width: 100%;
+}
+.btn-wrapper button::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--first-font-color);
+
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 250ms ease-in;
+  z-index: -1;
+}
+.btn-wrapper button:hover {
+  color: var(--main-color);
+}
+.btn-wrapper button:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+.btn-wrapper button:first-child {
+  margin-right: 1em;
+}
+
+
+/***********************************/
+/***********************************/
+/************ANIMATION***********/
+/***********************************/
+/***********************************/
+
+
+.home-container-right {
+  width: 100%;
+}
+
+.home-container-right img{
+  width: 100%;
+}
+
+/***********************************/
+/************ABOUT SECTION**********/
+/***********************************/
+
+.sec-about {
+  background-color: var(--main-color);
+  height: 100vh;
+  
+}
+.about-container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 7em 0 0;
+}
+.about-container h1 {
+  font-size: 3rem;
+}
+
+.carousel-container{
+  position: relative;
+}
+.arrows{
+  top: 50%;
+  font-size: 3em;
+  cursor: pointer;
+  background-color: #dbdbdb;
+  text-align: center;
+  border-radius: 50%;
+  color: #131313;
+  position: absolute;
+  transform: translateY(-50%);
+}
+
+.arrows:first-child{
+  left: -23px;
+}
+.arrows:last-child{
+  right: -23px;
+}
+.about-carousel {
+  max-width: 100%;
+  width: 100%;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 21%;
+  gap: 1rem;
+  overflow-x: hidden; 
+}
+.carousel-element {
+  display: grid;
+  padding: 1rem;
+  grid-template-rows: min-content;
+  gap: 1rem;
+  background: var(--first-font-color);
+}
+
+.carousel-element > img {
+  inline-size: 100%;
+  aspect-ratio: 16/9;
+  object-fit: contain;
+}
+
+.snap-inline {
+  scroll-snap-type: inline mandatory;
+}
+
+.snap-inline > * {
+  scroll-snap-align: start;
+  scroll-padding-inline: 1rem;
+}
+
+.carousel-star{
+  gap: .5em;
+}
+.star{
+  color: #fca311;
+}
+
+/***********************************/
+/***********HOME BODY SECTION*********/
+/***********************************/
+
+.sec-company, .sec-project, .sec-reachOut {
+  padding: 2em 0;
+}
+.company-container, .project-container, .reachOut-container {
+  max-width: 100%;
+  width: 90%;
+  padding: 2em 0;
+  /* inline-size: min(100% - 4rem, 70rem);
+  margin-inline: auto; */
+  margin: 0 auto;
+  background-color: var(--main-color);
+}
+.company-container h1, .project-container h1, .reachOut-container h1{
+  font-size: 3rem;
+}
+
+
+/***********************************/
+/***********COMPANY SECTION*********/
+/***********************************/
+
+.company-container h4 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/***********************************/
+/***********PROJECT SECTION*********/
+/***********************************/
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+/***********************************/
+/***********REACHOUT SECTION*********/
+/***********************************/
+.reachOut-container{
+}
+.reachOut-container-typewrite{
+  gap: .2em;
+}
+.reachOut-container .auto-type{
+  font-weight: 700;
+}
+/***********************************/
+/***********FOOTER SECTION*********/
+/***********************************/
+
+.footer{
+  max-width: 100%;
+  width: 90%;
+  min-height: 10vh;
+  margin: 0 auto;
+  padding: 2em 0 0;
+}
+.footer ul li{
+  margin: 0 .5em;
+}
+.footer-logos{
+  cursor: pointer;
+  font-size: 2em;
+  flex-wrap: wrap;
+}
+/***********************************/
+/***********MEDIA QUERIERS *********/
+/***********************************/
+@media screen and (max-width:1500px){
+  .btn-wrapper{
+    width: 100%;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width:1280px){
+  .btn-wrapper{
+    flex-direction: column;
+    width: 100%;
   }
-  to {
-    transform: rotate(360deg);
+
+  /***********************************/
+  /***********FOOTER SECTION*********/
+  /***********************************/
+  .footer-divs{
+    flex-direction: column;
+  }
+}
+@media screen and (max-width:1023px){
+  .home-container{
+    flex-wrap: wrap;
+    padding: 10em 0 0;
+    gap: 5em;
+  }
+  .btn-wrapper{
+    flex-direction: column;
+    width: 100%;
+  }
+  .home-container button{
+    width: 100%;
+  }
+  /***********************************/
+  /***********About SECTION*********/
+  /***********************************/
+  .about-carousel {
+    max-width: 100%;
+    width: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 35%;
+
+  }
+
+}
+
+
+@media screen and (max-width:769px){
+  /***********************************/
+  /***********About SECTION*********/
+  /***********************************/
+  .about-carousel {
+    grid-auto-flow: column;
+    grid-auto-columns: 50%;
+
+  }
+
+  
+  /***********************************/
+  /***********FOOTER SECTION*********/
+  /***********************************/
+  .footer-divs{
+    flex-direction: column;
+    font-size: .8em;
   }
 }
