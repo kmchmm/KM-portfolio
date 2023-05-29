@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/KM-portfolio/static/css/main.61a9fd38.css",
-    "main.js": "/KM-portfolio/static/js/main.221e6e1b.js",
+    "main.css": "/KM-portfolio/static/css/main.8219f86a.css",
+    "main.js": "/KM-portfolio/static/js/main.af5cacf1.js",
     "static/js/787.1ed0c42c.chunk.js": "/KM-portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/boxicons.svg": "/KM-portfolio/static/media/boxicons.9e2b21b135bc7d4c803f.svg",
-    "static/media/mouse.gif": "/KM-portfolio/static/media/mouse.7818769305523ad8c823.gif",
     "static/media/boxicons.eot": "/KM-portfolio/static/media/boxicons.65a8ce52fc5427e8f94d.eot",
     "static/media/boxicons.woff": "/KM-portfolio/static/media/boxicons.d12afc36557395143e4b.woff",
     "static/media/boxicons.ttf": "/KM-portfolio/static/media/boxicons.db9ddb1898dbd76badca.ttf",
     "static/media/boxicons.woff2": "/KM-portfolio/static/media/boxicons.df635aaf04cd75132f62.woff2",
+    "static/media/pixzel.jpg": "/KM-portfolio/static/media/pixzel.dc9df551e03595066854.jpg",
     "static/media/bootstrap.png": "/KM-portfolio/static/media/bootstrap.eee4b572114093781738.png",
+    "static/media/dreamteam.png": "/KM-portfolio/static/media/dreamteam.39ae45e6c57ea299b66a.png",
     "static/media/laravel.png": "/KM-portfolio/static/media/laravel.8b2939ca7ad8851c40a2.png",
     "static/media/react.png": "/KM-portfolio/static/media/react.85d6c18370f290987a01.png",
     "static/media/java.png": "/KM-portfolio/static/media/java.e238a2c40e6eaec570bc.png",
@@ -18,12 +19,12 @@
     "static/media/php.png": "/KM-portfolio/static/media/php.53d348fe7285a52eb6c3.png",
     "static/media/python.png": "/KM-portfolio/static/media/python.9c47735ea0c4a2d20349.png",
     "index.html": "/KM-portfolio/index.html",
-    "main.61a9fd38.css.map": "/KM-portfolio/static/css/main.61a9fd38.css.map",
-    "main.221e6e1b.js.map": "/KM-portfolio/static/js/main.221e6e1b.js.map",
+    "main.8219f86a.css.map": "/KM-portfolio/static/css/main.8219f86a.css.map",
+    "main.af5cacf1.js.map": "/KM-portfolio/static/js/main.af5cacf1.js.map",
     "787.1ed0c42c.chunk.js.map": "/KM-portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.61a9fd38.css",
-    "static/js/main.221e6e1b.js"
+    "static/css/main.8219f86a.css",
+    "static/js/main.af5cacf1.js"
   ]
 }
