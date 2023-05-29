@@ -9,7 +9,7 @@ function Footer(){
                 <div className="footer">
                     <div className="d-flex justify-content-between align-items-center footer-divs">
                         <div>
-                            <ul className="d-flex justify-content-between">
+                            <ul className="d-flex justify-content-between footer-privacy">
                                 <li>Privacy Policy</li>
                                 <li>Terms & Condition</li>
                             </ul>

@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /***********************************/
 /***********************************/
 /************main classes***********/
@@ -9,7 +8,7 @@
 
 :root {
   --main-font-family: "Montserrat", sans-serif;
-  --second-font-family: "Open Sans", sans-serif;
+  --second-font-family: 'Karla', sans-serif;
   --main-color: #131313;
   --third-color: #fca311;
   --fourth-color: #131313;
@@ -59,8 +58,12 @@
   font-size: 3rem;
 }
 
-
-.ahref{
+.ahref a{
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  color: #52d6f4;
+}
+.ahref a:hover{
   text-decoration: underline;
   text-underline-offset: 5px;
   color: var(--first-font-color);
@@ -79,16 +82,16 @@
   z-index: 100;
 }
 .App nav {
-  max-width: 90%;
-  height: 10vh;
-  align-items: center;
-  margin: auto;
+  max-width: 100%;
+  width: 90%;
+  min-height: 10vh;
+  margin: 0 auto;
 }
 .nav-image-container{
   max-width: 90px;
   width: 100%;
   height: 100%;
-    object-fit: contain;
+  object-fit: contain;
 }
 .nav-image-container img{
   width: 100%;
@@ -97,9 +100,10 @@
 .navigation-links li {
   margin: 0 1em;
 }
-.App nav a {
+.App nav li {
   font-weight: 600;
   font-size: 1rem;
+  padding-top: 1em;
 }
 .App nav a:hover {
   text-decoration: underline;
@@ -126,8 +130,10 @@
   height: 3px;
   margin: 5px 0;
 }
+
+
 /***********************************/
-/************HOME SECTION***********/
+/************HOME***********/
 /***********************************/
 
 .sec-about {
@@ -210,14 +216,94 @@
 
 .home-container-right {
   width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; 
+  background-color: var();
+  display: flex;
+  justify-content: center;
+  align-items: center; 
 }
 
-.home-container-right img{
+
+svg{
+  height: 100%;
   width: 100%;
+  
 }
 
 /***********************************/
-/************ABOUT SECTION**********/
+/***********HOME BODY SECTION*********/
+/***********************************/
+
+.sec-company, .sec-project, .sec-reachOut {
+  padding: 2em 0;
+}
+.company-container, .project-container, .reachOut-container {
+  max-width: 100%;
+  width: 90%;
+  padding: 2em 0;
+  /* inline-size: min(100% - 4rem, 70rem);
+  margin-inline: auto; */
+  margin: 0 auto;
+  background-color: var(--main-color);
+}
+.company-container h1, .project-container h1, .reachOut-container h1{
+  font-size: 3rem;
+}
+
+
+/***********************************/
+/***********COMPANY SECTION*********/
+/***********************************/
+.company-head-icon{
+  margin-top: 1em;
+}
+.company-container h4 {
+  text-align: center;
+  margin-bottom: 3em;
+}
+.company-logos {
+  gap: 3em;
+  flex-wrap: wrap;
+}
+.company-logos img{
+  max-width: 100%;
+  width: 150px;
+  height: 150px;
+}
+/***********************************/
+/***********PROJECT SECTION*********/
+/***********************************/
+
+
+/***********************************/
+/***********REACHOUT SECTION*********/
+/***********************************/
+.reachOut-container{
+  padding: 10em;
+}
+.reachOut-container-left{
+  max-width: 100%;
+  width: 50%;
+}
+.reachOut-container-typewrite{
+  gap: .2em;
+  font-size: 2em;
+}
+.reachOut-container .auto-type{
+  font-weight: 700;
+}
+.reachOut-container-p{
+  font-size: 2em;
+}
+.reachOut-container-contact{
+  gap: .5em;
+}
+
+/***********************************/
+/************ABOUT**********/
 /***********************************/
 
 .sec-about {
@@ -293,62 +379,25 @@
 .star{
   color: #fca311;
 }
-
-/***********************************/
-/***********HOME BODY SECTION*********/
-/***********************************/
-
-.sec-company, .sec-project, .sec-reachOut {
-  padding: 2em 0;
-}
-.company-container, .project-container, .reachOut-container {
-  max-width: 100%;
-  width: 90%;
-  padding: 2em 0;
-  /* inline-size: min(100% - 4rem, 70rem);
-  margin-inline: auto; */
-  margin: 0 auto;
-  background-color: var(--main-color);
-}
-.company-container h1, .project-container h1, .reachOut-container h1{
-  font-size: 3rem;
-}
-
-
-/***********************************/
-/***********COMPANY SECTION*********/
-/***********************************/
-
-.company-container h4 {
-  text-align: center;
-}
-
-/***********************************/
-/***********PROJECT SECTION*********/
-/***********************************/
-
-
-/***********************************/
-/***********REACHOUT SECTION*********/
-/***********************************/
-.reachOut-container{
-}
-.reachOut-container-typewrite{
-  gap: .2em;
-}
-.reachOut-container .auto-type{
-  font-weight: 700;
-}
 /***********************************/
 /***********FOOTER SECTION*********/
 /***********************************/
 
 .footer{
   max-width: 100%;
-  width: 90%;
   min-height: 10vh;
+  background-color: var(--first-font-color);
+}
+.footer-divs{
+  width: 90%;
   margin: 0 auto;
   padding: 2em 0 0;
+  color: var(--main-color);
+  font-weight: 500;
+}
+.footer-privacy li:hover{
+  color: #52d6f4;
+  cursor: pointer;
 }
 .footer ul li{
   margin: 0 .5em;
@@ -358,6 +407,9 @@
   font-size: 2em;
   flex-wrap: wrap;
 }
+.footer-logos li:hover{
+  color: #52d6f4;
+}
 /***********************************/
 /***********MEDIA QUERIERS *********/
 /***********************************/
@@ -365,11 +417,25 @@
   .btn-wrapper{
     width: 100%;
   }
+  .reachOut-container{
+    padding: 0;
+  }
+  .reachOut-container-typewrite{
+    gap: .2em;
+    font-size: 1.5em;
+  }
+  .reachOut-container-p{
+    font-size: 1.5em;
+  }
 }
 @media screen and (max-width:1280px){
   .btn-wrapper{
     flex-direction: column;
     width: 100%;
+  }
+
+  .reachOut-container-left{
+    width: 60%;
   }
 
   /***********************************/
@@ -392,6 +458,31 @@
   .home-container button{
     width: 100%;
   }
+  .home-container h1 {
+    font-size: 3.5rem;
+  }
+  .btn-wrapper button {
+    font-size: .9em;
+  }
+  .home-container-right{
+    background-color: #141417;
+  }
+
+  .reachOut-container{
+    flex-direction: column;
+    text-align: center;
+    gap: 2em;
+  }
+  .reachOut-container-typewrite{
+    align-items: center;
+    justify-content: center;
+  }
+  .reachOut-container-left{
+    width: 100%;
+  }
+  .reachOut-container-contact{
+    justify-content: center;
+  }
   /***********************************/
   /***********About SECTION*********/
   /***********************************/
@@ -408,6 +499,18 @@
 
 
 @media screen and (max-width:769px){
+  .home-container h1 {
+    font-size: 3rem;
+  }
+
+  .reachOut-container-typewrite{
+    gap: .2em;
+    font-size: 1.2em;
+  }
+
+  .reachOut-container-p{
+    font-size: 1.2em;
+  }
   /***********************************/
   /***********About SECTION*********/
   /***********************************/
@@ -424,5 +527,23 @@
   .footer-divs{
     flex-direction: column;
     font-size: .8em;
+  }
+}
+
+
+@media screen and (max-width:480px){
+  body{
+    font-size: .9em;
+  }
+  .reachOut-container-typewrite{
+    gap: .2em;
+    font-size: .9em;
+  }
+  .reachOut-container-p{
+    font-size: .9em;
+  }
+  .reachOut-container-contact{
+
+    flex-direction: column;
   }
 }

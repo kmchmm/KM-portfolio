@@ -1,16 +1,12 @@
 import { Link } from 'react-router-dom';
 
-import logo from './images/logo.png';
 import '../App.css';
 
 export const Header = () => {   
     return (
         <div className='App'>
             <header>
-                <nav className="d-flex justify-content-between align-items-center">
-                    <div className="nav-image-container">
-                        <img src={logo} alt="lordicon" />
-                    </div>
+                <nav className="d-flex justify-content-end">
                     <div className="d-flex justify-content-between align-items-center navigation">
                         <ul className="d-flex justify-content-between navigation-links">
                             <li>
