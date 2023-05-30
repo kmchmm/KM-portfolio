@@ -10,7 +10,8 @@ function App() {
     <>
       <Header />
       <Routes>
-        <Route path='/KM-portfolio' element={<Home />} index={true} />
+        <Route path='/KM-portfolio' element={<Home />} />
+        <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
         <Route path='/contact' element={<Contact />} />
       </Routes>

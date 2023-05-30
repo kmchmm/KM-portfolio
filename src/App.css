@@ -379,6 +379,39 @@ svg{
 .star{
   color: #fca311;
 }
+
+
+
+/***********************************/
+/***********CONTACT SECTION*********/
+/***********************************/
+.contact-email, .contact-timezone{
+  max-width: 100%;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 10em;
+}
+.contact-email{
+  margin-bottom: 2em;
+  gap: 2em;
+}
+.contact-email div{
+  width: 100%;
+  background-color: var(--first-font-color);
+  padding: 40px 0;
+  text-align: center;
+  color: var(--main-color);
+  font-weight: 700;
+  font-family: var(--second-font-family);
+  font-size: 1.1em;
+}
+.contact-timezone h3{
+  max-width: 100%;
+  width: 50%;
+  font-weight: 400;
+}
+
+
 /***********************************/
 /***********FOOTER SECTION*********/
 /***********************************/
@@ -413,6 +446,15 @@ svg{
 /***********************************/
 /***********MEDIA QUERIERS *********/
 /***********************************/
+@media screen and (max-width:1700px){
+  .reachOut-container-typewrite{
+    gap: .2em;
+    font-size: 1.5em;
+  }
+  .reachOut-container-p{
+    font-size: 1.5em;
+  }
+}
 @media screen and (max-width:1500px){
   .btn-wrapper{
     width: 100%;
@@ -425,6 +467,18 @@ svg{
     font-size: 1.5em;
   }
   .reachOut-container-p{
+    font-size: 1.5em;
+  }
+
+  #contact{
+    padding-top: 10em;
+  }
+  .contact-email, .contact-timezone{
+    padding: 1em 0;
+  }
+  .contact-timezone h3{
+    max-width: 100%;
+    width: 50%;
     font-size: 1.5em;
   }
 }
@@ -495,6 +549,17 @@ svg{
 
   }
 
+  /***********************************/
+  /***********Contact SECTION*********/
+  /***********************************/
+
+  .contact-timezone h3{
+    max-width: 100%;
+    width: 100%;
+    font-size: 1.5em;
+    text-align: center;
+  }
+
 }
 
 
@@ -520,7 +585,22 @@ svg{
 
   }
 
+  /***********************************/
+  /***********Contact SECTION*********/
+  /***********************************/
+  .contact-email{
+    flex-direction: column;
+  }
   
+  .contact-email div{
+    padding: 30px 0;
+    font-size: .9em;
+  }
+
+  .contact-timezone h3{
+    font-size: 1.2em;
+  }
+
   /***********************************/
   /***********FOOTER SECTION*********/
   /***********************************/
@@ -545,5 +625,9 @@ svg{
   .reachOut-container-contact{
 
     flex-direction: column;
+  }
+
+  .contact-timezone h3{
+    font-size: .9em;
   }
 }
