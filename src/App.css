@@ -492,7 +492,7 @@ svg{
   margin: 0 auto;
 }
 .contact-inputs-divs{
-  gap: 2em;
+  gap: 1em;
 }
 .contact-inputs input{
   max-width: 100%;
@@ -753,8 +753,10 @@ svg{
     font-size: .9em;
   }
   .reachOut-container-contact{
-
     flex-direction: column;
+  }
+  #contact .reachOut-container-typewrite{
+    font-size: 1em;
   }
 
   .contact-timezone h3, .contact-inputs h3{
