@@ -162,6 +162,56 @@ export const Home = () => {
                                                                 </div>
                                                             </div>
                                                         </div>
+
+                                                        <div className='experiences'>
+                                                            <div className='underline'></div>
+                                                            <h6>EXPERIENCE</h6>
+                                                            <div className='experience-years'>
+                                                                <div className='year'>
+                                                                    <div>
+                                                                        February 2022 - June 2022
+                                                                    </div>
+                                                                    <div>
+                                                                        Front-end Developer • DreamTeam PH                                                                    
+                                                                    </div>
+                                                                </div>
+                                                                <div className='year'>
+                                                                    <div>
+                                                                        December 2021 - January 2022
+                                                                    </div>
+                                                                    <div>
+                                                                        Quality Assurance • Advice Brands
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div className='projects-created'>
+                                                            <div className='underline'></div>
+                                                            <h6>PROJECTS CREATED</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div className='d-flex justify-content-between projects'>
+                                                    <div className='project-lists d-flex justify-content-between'>
+                                                            <div>
+                                                                <ul>
+                                                                    <li>Instagram Clone</li>
+                                                                    <li>Slack Clone</li>
+                                                                    <li>School Website</li>
+                                                                    <li>Calculator</li>
+                                                                </ul>
+                                                            </div>
+                                                            <div>
+                                                                <ul>
+                                                                    <li>Archiving System</li>
+                                                                    <li>Camera Detection with message alert system</li>
+                                                                    <li>Student enrollment with admin side system</li>
+                                                                    <li>Simple Chat system</li>
+                                                                </ul>
+                                                            </div>
+                                                    </div>
+                                                    <div>
+                                                        <button>Download Resume</button>
                                                     </div>
                                                 </div>
                                             </div>

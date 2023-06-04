@@ -237,7 +237,7 @@
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  padding-top: 25px; /* Location of the box */
+  padding-top: 15px; /* Location of the box */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -297,7 +297,7 @@
 .white-background h6{
   background-color: #23395d;
   color: var(--first-font-color);
-  padding: 15px 20px;
+  padding: 15px 0;
   width: 30%;
   text-align: center;
 }
@@ -359,22 +359,35 @@
 .education .underline{
   margin-top: 2em;
 }
-.education{
+.education, .experiences, .projects-created{
   position: relative;
 }
-.education h6{
+.education h6, .experiences h6, .projects-created h6{
   position: absolute;
   top: -25px;
 }
-.school-years{
+.school-years, .experience-years{
   padding: 3em 20px 0;
 
 }
 .year{
-  margin: 1em 0;
+  margin: 2em 0;
 }
 .year:first-child{
   margin: 0 0 1em;
+}
+
+.projects-created{
+  margin-top: 4.5em;
+}
+.projects{
+  margin-top: 1em;
+}
+.project-lists{
+  width: 70%;
+}
+.projects button:hover{
+  border: 1px solid var(--main-color);
 }
 /***********************************/
 /***********************************/
