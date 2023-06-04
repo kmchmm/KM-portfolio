@@ -227,7 +227,155 @@
   margin-right: 1em;
 }
 
+/***********************************/
+/***********************************/
+/************MODAL***********/
+/***********************************/
+/***********************************/
 
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 25px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  border: 1px solid #888;
+  color: var(--main-color);
+  min-height: 400px;
+  height: auto;
+  font-size: .8rem;
+}
+
+/* The Close Button */
+.close {
+  color: var(--first-font-color);
+  font-size: 28px;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/***********************************/
+/***********************************/
+/************resume design***********/
+/***********************************/
+/***********************************/
+.gray-background{
+  background-color: #7e7e7e;
+  width: 100%;
+  min-height: 10vh;
+  border: 1px solid #7e7e7e;
+}
+.white-background{
+  background-color: var(--first-font-color);
+  min-height: 20vh;
+  width: 100%;
+  color: var(--main-color);
+  padding: 0 20px;
+}
+.white-background li{
+  list-style: disc;
+}
+.white-background h6{
+  background-color: #23395d;
+  color: var(--first-font-color);
+  padding: 15px 20px;
+  width: 30%;
+  text-align: center;
+}
+.name-header{
+  position: absolute;
+  width: 70%;
+  top: 25px;
+  left: 15%;
+  text-align: center;
+  padding: 10px 20px;
+  border: 3px solid var(--third-color);
+  background-color: var(--first-font-color);
+}
+.name-header h2, .name-header h5{
+  font-weight: 700;
+  letter-spacing: .1rem;
+}
+.user-contacts{
+  padding-top: 4em;
+  gap: 2em;
+}
+.user-contacts i{
+  font-size: 1.5rem;
+}
+
+.about-user{
+  position: relative;
+}
+.underline{
+  border-bottom: 3px solid var(--third-color);
+  width: 100%;
+  margin-top: 3em;
+}
+.about-user h6{
+  position: absolute;
+  left: 35%;
+  top: -25px;
+}
+.aboutme-paragraph{
+  padding-top: 3em;
+  margin-bottom: 2em;
+}
+.user-skills{
+  width: 30%;
+  background-color: #e9e8e8;
+  padding: 10px;
+}
+.user-skills-header{
+  text-align: center;
+  letter-spacing: .2rem;
+  margin-bottom: 1em;
+}
+.seminar-title{
+  font-weight: 700;
+}
+.user-background{
+  width: 70%;
+}
+.education .underline{
+  margin-top: 2em;
+}
+.education{
+  position: relative;
+}
+.education h6{
+  position: absolute;
+  top: -25px;
+}
+.school-years{
+  padding: 3em 20px 0;
+
+}
+.year{
+  margin: 1em 0;
+}
+.year:first-child{
+  margin: 0 0 1em;
+}
 /***********************************/
 /***********************************/
 /************ANIMATION***********/

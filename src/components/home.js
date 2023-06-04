@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import pixzel from './images/pixzel.jpg';
 import dreamteam from './images/dreamteam.png';
@@ -13,6 +13,33 @@ import '../App.css';
 
 export const Home = () => {
 
+    useEffect(() => {
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("viewProfileBtn");
+        
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+        modal.style.display = "block";
+        }
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+        modal.style.display = "none";
+        }
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+        }
+      }, []);
   return (
     <div className="App">
             <section id="home">
@@ -38,7 +65,110 @@ export const Home = () => {
                             </div>
                             <div className="d-flex justify-content-between btn-wrapper">
                                 <a href="#company"><button>EXPLORE WORK</button></a>
-                                <button>VIEW PROFILE</button>
+                                
+                                <button id="viewProfileBtn">VIEW RESUME</button>
+                               
+                                <div id="myModal" className="modal">
+
+                                    <div className="modal-content" style={{ width: '50%' }}>
+                                        <div className='resume-content'>
+                                            <div className='gray-background'>
+                                                <div className='d-flex justify-content-end'>
+                                                    <span className="close">&times;</span>
+                                                </div>
+                                            </div>
+                                            <div className='white-background'>
+                                                <div className='name-header'>
+                                                    <h2>KIM P. MICULOB</h2>
+                                                    <h5>WEB DEVELOPER</h5>
+                                                </div>
+                                                <div className='user-contacts d-flex justify-content-between'>
+                                                    <div>
+                                                        <span><i class='bx bx-home'></i></span>
+                                                        <span>Araneta Street, Población Iligan City, Lanao del Norte</span>
+                                                    </div>
+                                                    <div>
+                                                        <span><i class='bx bx-phone' ></i></span>
+                                                        <span>+639457416928</span>
+                                                    </div>
+                                                    <div>
+                                                        <span><i class='bx bx-envelope' ></i></span>
+                                                        <span>kimmiculob.official@gmail.com</span>
+                                                    </div>
+                                                </div>
+                                                <div className='about-user'>
+                                                    <div className='underline'></div>
+                                                    <h6>ABOUT ME</h6>
+                                                    <div className='aboutme-paragraph'>
+                                                        Attentive to details, developed when working in a Quality Assurance company and has the skills for developing web pages demonstrated through the number of projects created. 
+                                                    </div>
+                                                </div>
+                                                <div className='otheruser-infor d-flex'>
+                                                    <div className='user-skills'>
+                                                        <div className='user-skills-header'>SKILLS</div>
+                                                        <ul>
+                                                            <li>HTML, CSS, JavaScript</li>
+                                                            <li>Bootstrap</li>
+                                                            <li>ReactJs</li>
+                                                            <li>nodeJs</li>
+                                                            <li>PHP</li>
+                                                            <li>MySQL</li>
+                                                            <li>Laravel</li>
+                                                            <li>Git</li>
+                                                            <li>Python — Django</li>
+                                                            <li>Java &#40;Basic&#41;</li>
+                                                            <li>C# &#40;Basic&#41;</li>
+                                                            <li>Research</li>
+                                                            <li>Attention to Details</li>
+                                                        </ul>
+                                                        <div className='user-skills-header'>SEMINARS</div>
+                                                            <div className='seminar-title'>DEVCON Summit 2018 and 2019</div>
+                                                                <ul>
+                                                                    <li>Capitol University, Cagayan de Oro City</li>
+                                                                </ul>
+                                                            <div className='seminar-title'>Search Engine Optimization and Web Application Development Seminar</div>
+                                                                <ul>
+                                                                    <li>St. Peter’s College</li>
+                                                                </ul>
+                                                    </div>
+                                                    <div className='user-background'>
+                                                        <div className='education'>
+                                                            <div className='underline'></div>
+                                                            <h6>EDUCATION</h6>
+                                                            <div className='school-years'>
+                                                                <div className='year'>
+                                                                    <div>
+                                                                        2018 - 2022
+                                                                    </div>
+                                                                    <div>
+                                                                        Tertiary Level &#x2022;  Bachelor of Science in Computer Science &#x2022;  St. Peter’s College
+                                                                    </div>
+                                                                </div>
+                                                                <div className='year'>
+                                                                    <div>
+                                                                        2010 - 2014
+                                                                    </div>
+                                                                    <div>
+                                                                        Secondary Level &#x2022;  Corpus Christi Parochial School of Iligan
+                                                                    </div>
+                                                                </div>
+                                                                <div className='year'>
+                                                                    <div>
+                                                                        2004 - 2010
+                                                                    </div>
+                                                                    <div>
+                                                                        Primary Level &#x2022; Batch Salutatorian &#x2022; United Methodist Development Academy
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
                             </div>
                         </div>
     
