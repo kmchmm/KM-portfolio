@@ -249,6 +249,7 @@
 
 /* Modal Content */
 .modal-content {
+  width: 50% !important;
   background-color: #fefefe;
   margin: auto;
   border: 1px solid #888;
@@ -318,9 +319,11 @@
 .user-contacts{
   padding-top: 4em;
   gap: 2em;
+  font-weight: 700;
 }
 .user-contacts i{
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  margin-right: .2em;
 }
 
 .about-user{
@@ -763,6 +766,9 @@ svg{
   .reachOut-container-p{
     font-size: 1.5em;
   }
+  .modal-content {
+    width: 70% !important;
+  }
 }
 @media screen and (max-width:1500px){
   .btn-wrapper{
@@ -777,6 +783,9 @@ svg{
   }
   .reachOut-container-p{
     font-size: 1.5em;
+  }
+  .user-contacts{
+    padding: 7em 0 2em;
   }
 
   #contact{
@@ -810,6 +819,19 @@ svg{
   .btn-wrapper{
     flex-direction: column;
     width: 100%;
+  }
+
+  .modal-content {
+    width: 80% !important;
+    font-size: .7rem;
+  }
+
+  .white-background h6{
+    width: 40%;
+  }
+
+  .about-user h6{
+    left: 30%;
   }
 
   .reachOut-container-left{
@@ -874,6 +896,17 @@ svg{
   .reachOut-container-contact{
     justify-content: center;
   }
+
+
+  .modal-content {
+    width: 85% !important;
+    font-size: .7rem;
+  }
+  .user-contacts{
+    width: 100%;
+    flex-direction: column;
+  }
+
   /***********************************/
   /***********About SECTION*********/
   /***********************************/
@@ -913,6 +946,44 @@ svg{
 
   .reachOut-container-p{
     font-size: 1.2em;
+  }
+
+  .modal-content {
+    width: 100% !important;
+    font-size: .5rem;
+  }
+
+  .otheruser-infor{
+    flex-direction: column;
+  }
+  .user-skills{
+    width: 100%;
+  }
+  .user-background{
+    width: 100%;
+  }
+  .white-background h6{
+    width: 40%;
+    font-size: .8rem;
+    padding: 10px 0;
+    left: 25%;
+  }
+  .about-user h6{
+    left: 25%;
+
+  }
+  .school-years div:last-child{
+    padding-bottom: 1em;
+  }
+  .white-background button{
+    margin-bottom: 2em;
+    padding: 10px 0;
+  }
+  .projects{
+    flex-direction: column;
+  }
+  .project-lists {
+    flex-direction: column;
   }
   .company-container h1, .project-container h1, .reachOut-container h1{
     font-size: 2rem;
@@ -974,11 +1045,51 @@ svg{
   .reachOut-container-contact{
     flex-direction: column;
   }
+  .modal-content {
+    width: 100% !important;
+    font-size: .5rem;
+  }
+
+  .white-background h6{
+    width: 60%;
+    font-size: .8rem;
+    padding: 10px 0;
+  }
+  .about-user h6{
+    left: 20%;
+
+  }
   #contact .reachOut-container-typewrite{
     font-size: .8em;
   }
 
   .contact-timezone h3, .contact-inputs h3{
     font-size: .8em;
+  }
+}
+@media screen and (max-width:375px){
+  .name-header h2{
+    font-size: .9rem;
+  }
+  .name-header h5{
+     font-size: .7rem;
+  }
+  .modal-content {
+    width: 100% !important;
+    font-size: .5rem;
+  }
+
+  .otheruser-infor{
+    gap: 2em;
+  }
+
+  .white-background h6{
+    width: 60%;
+    font-size: .8rem;
+    padding: 10px 0;
+  }
+  .about-user h6{
+    left: 20%;
+
   }
 }

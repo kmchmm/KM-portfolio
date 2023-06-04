@@ -70,7 +70,7 @@ export const Home = () => {
                                
                                 <div id="myModal" className="modal">
 
-                                    <div className="modal-content" style={{ width: '50%' }}>
+                                    <div className="modal-content">
                                         <div className='resume-content'>
                                             <div className='gray-background'>
                                                 <div className='d-flex justify-content-end'>
@@ -83,15 +83,15 @@ export const Home = () => {
                                                     <h5>WEB DEVELOPER</h5>
                                                 </div>
                                                 <div className='user-contacts d-flex justify-content-between'>
-                                                    <div>
+                                                    <div className='d-flex align-content-center'>
                                                         <span><i class='bx bx-home'></i></span>
                                                         <span>Araneta Street, Población Iligan City, Lanao del Norte</span>
                                                     </div>
-                                                    <div>
+                                                    <div className='d-flex align-content-center'>
                                                         <span><i class='bx bx-phone' ></i></span>
                                                         <span>+639457416928</span>
                                                     </div>
-                                                    <div>
+                                                    <div className='d-flex align-content-center'>
                                                         <span><i class='bx bx-envelope' ></i></span>
                                                         <span>kimmiculob.official@gmail.com</span>
                                                     </div>
