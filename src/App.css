@@ -756,7 +756,7 @@ svg{
     flex-direction: column;
   }
   #contact .reachOut-container-typewrite{
-    font-size: 1em;
+    font-size: .9em;
   }
 
   .contact-timezone h3, .contact-inputs h3{
