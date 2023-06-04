@@ -54,7 +54,8 @@
 
 .about-head-icon,
 .project-head-icon,
-.company-head-icon {
+.company-head-icon,
+.contact-client-info-header-icon {
   font-size: 3rem;
 }
 
@@ -408,11 +409,19 @@ svg{
 #contact.reachOut-container-contact{
   justify-content: center;
 }
+.contact-client-info-header h2{
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 1em;
+}
 .contact-email, .contact-timezone, .contact-inputs{
   max-width: 100%;
   width: 90%;
   margin: 0 auto;
-  padding: 0 10em;
+  padding: 0 5em;
+}
+.contact-client-info-forms{
+  gap: 2em;
 }
 .contact-timezone, .contact-inputs{
   padding: 5em 10em;
@@ -433,13 +442,15 @@ svg{
 }
 .contact-timezone h3, .contact-inputs h3{
   max-width: 100%;
-  width: 90%;
+  width: 100%;
   font-weight: 400;
   text-align: center;
   margin: 0 auto;
   margin-bottom: 3em;
 }
-
+.contact-inputs h3{
+  margin-bottom: 1em;
+}
 .accordion{
   background-color: transparent;
   color: var(--first-font-color);
@@ -488,8 +499,11 @@ svg{
 
 .contact-inputs form{
   max-width: 100%;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
+  padding: 0 0 2em;
+  background-color: var(--first-font-color);
+  padding: 2em 2em;
 }
 .contact-inputs-divs{
   gap: 1em;
@@ -500,6 +514,7 @@ svg{
   border: none;
   margin-bottom: 1em;
   padding: 10px 15px;
+  background-color: #e5e5e5;
 }
 .contact-inputs textarea{
   max-width: 100%;
@@ -507,7 +522,7 @@ svg{
   border: none;
   padding: 10px 15px;
   margin-bottom: 1em;
-
+  background-color: #e5e5e5;
 }
 .contact-inputs input:focus, .contact-inputs textarea:focus{
   outline: none;
@@ -519,6 +534,9 @@ svg{
   letter-spacing: .1rem;
 }
 
+.contact-inputs button:hover {
+  border: 1px solid var(--main-color);
+}
 /***********************************/
 /***********FOOTER SECTION*********/
 /***********************************/
@@ -583,11 +601,14 @@ svg{
   #contact .reachOut-container-typewrite{
     font-size: 2.5em;
   }
+  .contact-client-info-header h2{
+    margin-bottom: 1em;
+  }
   .contact-email{
     padding: 1em 0;
   }
   .contact-timezone, .contact-inputs{
-    padding: 3em 0;
+    padding: 3em;
   }
   .contact-timezone h3, .contact-inputs h3{
     max-width: 100%;
@@ -617,6 +638,12 @@ svg{
   }
   #contact .reachOut-container-typewrite{
     font-size: 2em;
+  }
+  .contact-client-info-forms{
+    flex-direction: column;
+  }
+  .contact-timezone, .contact-inputs{
+    padding: 3em 0;
   }
   /***********************************/
   /***********FOOTER SECTION*********/
@@ -703,6 +730,9 @@ svg{
   .reachOut-container-p{
     font-size: 1.2em;
   }
+  .company-container h1, .project-container h1, .reachOut-container h1{
+    font-size: 2rem;
+  }
   /***********************************/
   /***********About SECTION*********/
   /***********************************/
@@ -729,6 +759,11 @@ svg{
 
   .contact-timezone h3, .contact-inputs h3{
     font-size: 1.2em;
+  }
+
+  .contact-client-info-header h2{
+    font-size: 2rem;
+    margin-bottom: 1em;
   }
 
   /***********************************/

@@ -58,58 +58,67 @@ function Contact (){
                        <div>(+63) 945 7416 928</div>                            
                     </div>
                 </div>
+                
+                <div className='contact-client-info'>
+                    <div className='contact-client-info-header'>
+                        <div className="text-center contact-client-info-header-icon"><i class='bx bxs-user-check'></i></div>
+                        <h2>About You</h2> 
+                    </div>
+                    <div className='d-flex contact-client-info-forms'>
+                        <div className="contact-timezone">
+                            <div>
+                                <h3>Before sending me a message, here are some things you should know:</h3>
+                                <div>
+                                    <button class="accordion">What timezone are you in?</button>
+                                    <div class="panel">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    </div>
 
-                <div className="contact-timezone">
-                    <div>
-                        <h3>Before sending me a message, here are some things you should know:</h3>
-                        <div>
-                            <button class="accordion">What timezone are you in?</button>
-                            <div class="panel">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    <button class="accordion">Do we make a contract?</button>
+                                    <div class="panel">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    </div>
+
+                                    <button class="accordion">How much do you charge for a website?</button>
+                                    <div class="panel">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    </div>
+
+                                    <button class="accordion">Do you charge by the hour?</button>
+                                    <div class="panel">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    </div>      
+                                    
+                                    <button class="accordion">Are you working with a team?</button>
+                                    <div class="panel">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    </div>                
+                                </div>
                             </div>
-
-                            <button class="accordion">Do we make a contract?</button>
-                            <div class="panel">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                        <div className="contact-inputs">
+                            <div>
+                                <h3>Got a project in mind? Use the form to give me as much detail as possible and I'll get back to you as soon as I can.</h3>
+                                <form>
+                                    <div className='d-flex justify-content-between contact-inputs-divs'>
+                                        <input type="text" name="" value="" placeholder='Name'/>
+                                        <input type="text" name="" value="" placeholder='Email Address'/>
+                                    </div>
+                                    <div className='d-flex justify-content-between contact-inputs-divs'>
+                                        <input type="text" name="" value="" placeholder='Budget range'/>
+                                        <input type="text" name="" value="" placeholder='Timeline'/>
+                                    </div>
+                                    <div>
+                                        <textarea rows="5" cols="3" placeholder='Project details'></textarea>
+                                    </div>
+                                        <button>Let's do this</button>
+                                </form>
                             </div>
-
-                            <button class="accordion">How much do you charge for a website?</button>
-                            <div class="panel">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            </div>
-
-                            <button class="accordion">Do you charge by the hour?</button>
-                            <div class="panel">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            </div>      
-                            
-                            <button class="accordion">Are you working with a team?</button>
-                            <div class="panel">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            </div>                
                         </div>
                     </div>
                 </div>
-                <div className="contact-inputs">
-                    <div>
-                        <h3>Got a project in mind? Use the form to give me as much detail as possible and I'll get back to you as soon as I can.</h3>
-                        <br/>
-                        <form>
-                            <div className='d-flex justify-content-between contact-inputs-divs'>
-                                <input type="text" name="" value="" placeholder='Name'/>
-                                <input type="text" name="" value="" placeholder='Email Address'/>
-                            </div>
-                            <div className='d-flex justify-content-between contact-inputs-divs'>
-                                <input type="text" name="" value="" placeholder='Budget range'/>
-                                <input type="text" name="" value="" placeholder='Timeline'/>
-                            </div>
-                            <div>
-                                <textarea rows="5" cols="3" placeholder='Project details'></textarea>
-                            </div>
-                                <button>Let's do this</button>
-                        </form>
-                    </div>
-                </div>
+                               
+            
 
             </section>
         </div>
