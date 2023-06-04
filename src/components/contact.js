@@ -42,6 +42,20 @@ function Contact (){
                         
                     </div>
                 </div>
+                <div className="contact-inputs">
+                    <div>
+                        <h3>Got a project in mind? Use the form to give me as much detail as possible and I'll get back to you as soon as I can.</h3>
+                        <br/>
+                        <form>
+                            <input type="text" name="" value="" placeholder='Name'/>
+                            <input type="text" name="" value="" placeholder='Email Address'/>
+                            <textarea rows="" cols=""></textarea>
+                            <input type="text" name="" value="" placeholder='Budget range'/>
+                            <input type="text" name="" value="" placeholder='Timeline'/>
+                            <input type="submit" name="" value="Submit" />
+                        </form>
+                    </div>
+                </div>
 
             </section>
         </div>

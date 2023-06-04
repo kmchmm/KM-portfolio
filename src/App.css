@@ -11,7 +11,6 @@
   --second-font-family: 'Karla', sans-serif;
   --main-color: #131313;
   --third-color: #fca311;
-  --fourth-color: #131313;
   --first-font-color: #ffffff;
   --secondary-font-color: #e5e5e5;
 }
@@ -385,7 +384,7 @@ svg{
 /***********************************/
 /***********CONTACT SECTION*********/
 /***********************************/
-.contact-email, .contact-timezone{
+.contact-email, .contact-timezone, .contact-inputs{
   max-width: 100%;
   width: 90%;
   margin: 0 auto;
@@ -405,10 +404,13 @@ svg{
   font-family: var(--second-font-family);
   font-size: 1.1em;
 }
-.contact-timezone h3{
+.contact-timezone h3, .contact-inputs h3{
   max-width: 100%;
   width: 50%;
   font-weight: 400;
+}
+.contact-inputs input{
+  display: block;
 }
 
 

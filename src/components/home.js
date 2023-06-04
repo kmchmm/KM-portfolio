@@ -20,10 +20,13 @@ export const Home = () => {
                 <div className="home-container d-flex justify-content-around">
                         <div className="home-container-left">
                             <div>
+                                <h2>Hey there, I'm Kim</h2>
+                            </div>
+                            <div>
                                 <h1><span className="auto-type">
                                 <Typewriter
                                     options={{
-                                        strings: ['WordPress Developer', 'Full-Stack Developer'],
+                                        strings: ['WordPress Developer', 'Full-Stack Developer', 'Web Designer' ],
                                         autoStart: true,
                                         loop: true,
                                     }}
@@ -32,7 +35,6 @@ export const Home = () => {
                             </div>
                             <div>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut vitae deserunt, veritatis voluptas facilis quidem quas temporibus, quo laudantium perferendis, modi sint. Voluptatum reprehenderit, ducimus inventore doloremque excepturi consequuntur nesciunt?</p>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum voluptates iste molestiae obcaecati maiores velit quos a suscipit enim alias quo, nobis in repudiandae natus saepe dicta assumenda quod repellendus.</p>
                             </div>
                             <div className="d-flex justify-content-between btn-wrapper">
                                 <a href="#company"><button>EXPLORE WORK</button></a>
