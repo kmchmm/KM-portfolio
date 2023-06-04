@@ -322,8 +322,9 @@
   font-weight: 700;
 }
 .user-contacts i{
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-right: .2em;
+  padding-top: .1em;
 }
 
 .about-user{
@@ -769,6 +770,12 @@ svg{
   .modal-content {
     width: 70% !important;
   }
+  .user-contacts i{
+    padding-top: .1em;
+  }
+  .user-contacts div span:last-child{
+    padding-top: .1em;
+  }
 }
 @media screen and (max-width:1500px){
   .btn-wrapper{
@@ -832,6 +839,13 @@ svg{
 
   .about-user h6{
     left: 30%;
+  }
+
+  .user-contacts i{
+    padding-top: .1em;
+  }
+  .user-contacts div span:last-child{
+    padding-top: .1em;
   }
 
   .reachOut-container-left{
@@ -906,6 +920,12 @@ svg{
     width: 100%;
     flex-direction: column;
   }
+  .user-contacts i{
+    padding-top: .1em;
+  }
+  .user-contacts div span:last-child{
+    padding: .1em;
+  }
 
   /***********************************/
   /***********About SECTION*********/
@@ -971,6 +991,12 @@ svg{
   .about-user h6{
     left: 25%;
 
+  }
+  .user-contacts i{
+    padding: 0;
+  }
+  .user-contacts div span:last-child{
+    padding: .2em;
   }
   .school-years div:last-child{
     padding-bottom: 1em;
@@ -1059,6 +1085,12 @@ svg{
     left: 20%;
 
   }
+  .user-contacts i{
+    padding: 0;
+  }
+  .user-contacts div span:last-child{
+    padding: .2em;
+  }
   #contact .reachOut-container-typewrite{
     font-size: .8em;
   }
@@ -1091,5 +1123,11 @@ svg{
   .about-user h6{
     left: 20%;
 
+  }
+  .user-contacts i{
+    padding: 0;
+  }
+  .user-contacts div span:last-child{
+    padding: .2em;
   }
 }
