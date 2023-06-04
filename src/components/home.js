@@ -89,7 +89,7 @@ export const Home = () => {
                                                     </div>
                                                     <div className='d-flex align-content-center'>
                                                         <span><i class='bx bx-phone' ></i></span>
-                                                        <span>+639457416928</span>
+                                                        <span>+63 945 741 6928</span>
                                                     </div>
                                                     <div className='d-flex align-content-center'>
                                                         <span><i class='bx bx-envelope' ></i></span>
