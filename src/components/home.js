@@ -114,11 +114,11 @@ export const Home = () => {
                                     </g>
                                     <linearGradient id="fade" gradientTransform="rotate(90)">
                                         <stop offset="0" stop-color="#14141700"/>
-                                        <stop offset="0.25" stop-color="#141417ff"/>
+                                        <stop offset="0.25" stop-color="#131313"/>
                                     </linearGradient>
                                     <linearGradient id="sky" gradientTransform="rotate(90)">
                                         <stop offset="0.5" stop-color="#141417"/>
-                                        <stop offset="1" stop-color="#40354a"/>
+                                        <stop offset="1" stop-color="#131313"/>
                                     </linearGradient>
                                 
                                     
@@ -232,11 +232,9 @@ export const Home = () => {
                                         />
                                     </span>
                         </div>
-                        <br />
                         <div className='reachOut-container-p'>
                             <p>If you're looking for a designer and developer that likes to get stuff done, let's talk.</p>
                         </div>
-                        <br />
                         <div className='d-flex reachOut-container-contact'>
                             <span>Got a project in mind?</span> 
                             <span className='ahref'><Link to="/contact">Walk me through it!</Link></span>
