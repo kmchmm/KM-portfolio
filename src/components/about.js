@@ -12,6 +12,11 @@ import python from './images/python.png';
 import django from './images/django.png';
 import java from './images/java.png';
 
+
+import Typewriter from 'typewriter-effect';
+import { Link } from 'react-router-dom';
+
+
 import '../App.css';
 
 export const About = () => {
@@ -24,7 +29,7 @@ export const About = () => {
                         <h1>Hi! I'm Kim Miculob</h1>
                     </div>
                     <div className="text-center about-head-icon"><i className='bx bx-hive'></i></div>
-                    <h1 className="text-center">Skills & Technologies</h1>
+                    <h1 className="text-center">Skills for Development</h1>
                     <div class="carousel-container">
                     <i id="left" className='bx bx-chevron-left arrows'></i>
                     <div className="about-carousel snap-inline">
@@ -145,6 +150,41 @@ export const About = () => {
                 </div>
             </div>
         </section>
+
+        <section id="reachOut">
+            <div className="sec-reachOut">
+                <div className="reachOut-container d-flex justify-content-between align-items-center">
+                    <div className='reachOut-container-left'>
+                        <div className='d-flex reachOut-container-typewrite'>
+                            <span>I'm currently available for </span><span className="auto-type">
+                                    <Typewriter
+                                        options={{
+                                            strings: [' Full Time Work!', ' Part Time Work!', ' Freelance!'],
+                                            autoStart: true,
+                                            loop: true,
+                                        }}
+                                        />
+                                    </span>
+                        </div>
+                        <div className='reachOut-container-p'>
+                            <p>If you're looking for a designer and developer that likes to get stuff done, let's talk.</p>
+                        </div>
+                        <div className='d-flex reachOut-container-contact'>
+                            <span>Got a project in mind?</span> 
+                            <span className='ahref'><Link to="/contact">Walk me through it!</Link></span>
+                        </div>
+                    </div>
+                    
+                    <div className='reachOut-container-right'>
+                        <div>
+                             <p>kimmiculob.official@gmail.com</p>
+                             <p>(+63) 945 7416 928</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </div>
 
     );

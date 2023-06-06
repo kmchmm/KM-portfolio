@@ -55,7 +55,7 @@ function Contact (){
                     
                     <div className="contact-email d-flex justify-content-between">
                        <div>kimmiculob.official@gmail.com</div>
-                       <div>(+63) 945 7416 928</div>                            
+                       <div>(+63) 945 741 6928</div>                            
                     </div>
                 </div>
                 
