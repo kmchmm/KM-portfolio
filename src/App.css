@@ -685,6 +685,7 @@ svg{
 }
 .panel p:hover{
   cursor: pointer;
+  background-color: #565b66;
 }
 
 .contact-inputs form{
