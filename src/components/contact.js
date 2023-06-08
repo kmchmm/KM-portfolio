@@ -71,27 +71,33 @@ function Contact (){
                                 <div>
                                     <button class="accordion">What timezone are you in?</button>
                                     <div class="panel">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                        <p>UTC</p>
                                     </div>
 
                                     <button class="accordion">Do we make a contract?</button>
                                     <div class="panel">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                        <p>Yes</p>
+                                        <p>No</p>  
                                     </div>
 
                                     <button class="accordion">How much do you charge for a website?</button>
                                     <div class="panel">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                        <p>&#36; 0 &#8722; &#36; 100</p>
+                                        <p>&#36; 101 &#8722; &#36; 500</p>
+                                        <p>&#36; 501 &#8722; &#36; 1000</p>
+                                        <p>&#36; 1000&#x2b;</p>
                                     </div>
 
                                     <button class="accordion">Do you charge by the hour?</button>
                                     <div class="panel">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                        <p>Yes</p>
+                                        <p>No</p>                                   
                                     </div>      
                                     
                                     <button class="accordion">Are you working with a team?</button>
                                     <div class="panel">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                        <p>Yes</p>
+                                        <p>No</p>
                                     </div>                
                                 </div>
                             </div>

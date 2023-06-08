@@ -654,9 +654,7 @@ svg{
 }
 
 .accordion:hover{
-  background-color: #33363D;
-  border-top: 1px solid var(--main-color);
-  border-bottom: 1px solid #7e7e7e;
+  border: 1px solid #7e7e7e;
 }
 .active{
   border: 1px solid #33363D;
@@ -675,7 +673,6 @@ svg{
 }
 
 .panel{
-  padding: 1em 18px;
   display: none;
   background-color: #33363D;
   color: var(--first-font-color);
@@ -683,7 +680,12 @@ svg{
   transition: max-height 0.2s ease-out;
   border: 1px solid #33363D;
 }
-
+.panel p{
+  padding: 10px 18px;
+}
+.panel p:hover{
+  cursor: pointer;
+}
 
 .contact-inputs form{
   max-width: 100%;
