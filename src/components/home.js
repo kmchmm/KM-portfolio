@@ -3,6 +3,10 @@ import React, { useEffect } from 'react';
 import pixzel from './images/pixzel.jpg';
 import dreamteam from './images/dreamteam.png';
 import adviceB from './images/advice-brands.png';
+import homestead from './images/logo.svg';
+import slack from './images/slack.png';
+import calculator from './images/calculator.jpg';
+
 
 
 import { Link } from 'react-router-dom';
@@ -39,6 +43,80 @@ export const Home = () => {
             modal.style.display = "none";
         }
         }
+        const slider = document.querySelector(".slider");
+        const nextBtn = document.querySelector('.next-btn');
+        const prevBtn = document.querySelector('.prev-btn');
+        const slides = document.querySelectorAll('.slide');
+        const slideIcons = document.querySelectorAll('.slide-icon');
+        const numberOfSlides = slides.length;
+        var slideNumber = 0;
+
+        nextBtn.addEventListener("click", () => {
+            slides.forEach((slide) => {
+                slide.classList.remove("active-slide");
+            });
+            slideIcons.forEach((slidesIcon) => {
+                slidesIcon.classList.remove("active-slide");
+            });
+            
+            slideNumber++;
+
+            if(slideNumber > (numberOfSlides - 1)){
+                slideNumber = 0;
+            }
+
+            slides[slideNumber].classList.add("active-slide");
+            slideIcons[slideNumber].classList.add("active-slide");
+
+        });
+
+        prevBtn.addEventListener("click", () => {
+            slides.forEach((slide) => {
+                slide.classList.remove("active-slide");
+            });
+            slideIcons.forEach((slidesIcon) => {
+                slidesIcon.classList.remove("active-slide");
+            });
+            
+            slideNumber--;
+
+            if(slideNumber < 0){
+                slideNumber = numberOfSlides - 1;
+            }
+
+            slides[slideNumber].classList.add("active-slide");
+            slideIcons[slideNumber].classList.add("active-slide");
+        });
+
+        var playSlider;
+        var repeater = () => {
+            playSlider = setInterval(function() {
+                slides.forEach((slide) => {
+                    slide.classList.remove("active-slide");
+                });
+                slideIcons.forEach((slidesIcon) => {
+                    slidesIcon.classList.remove("active-slide");
+                });
+                
+                slideNumber++;
+
+                if(slideNumber > (numberOfSlides - 1)){
+                    slideNumber = 0;
+                }
+
+                slides[slideNumber].classList.add("active-slide");
+                slideIcons[slideNumber].classList.add("active-slide");                
+            }, 5000);
+        }
+        repeater();
+
+        slider.addEventListener("mouseover", () => {
+            clearInterval(playSlider);
+        });
+
+        slider.addEventListener("mouseout", () => {
+            repeater();
+        })
       }, []);
   return (
     <div className="App">
@@ -392,6 +470,49 @@ export const Home = () => {
                 <div className="project-container">
                     <div className="text-center project-head-icon"><i className='bx bxl-graphql'></i></div>
                     <h1 className="text-center">Projects Created</h1>
+                        <div className='slides-container d-flex justify-content-center align-content-center'>
+                            <div className="slider">
+                                <div className='slide active-slide'>
+                                    <img src={calculator} alt=''/>
+                                    <div className='info'>
+                                        <h4>Calculator</h4>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem quos minus ducimus, eum eveniet magnam officiis deleniti velit cupiditate doloribus similique, repellendus debitis quidem libero voluptatibus reiciendis consequuntur magni? Excepturi!</p>
+                                    </div>
+                                    <a href="https://kmchmm.github.io/calculator/" target="_blank" rel="noopener noreferrer">
+                                        <button>View Project</button>
+                                    </a>
+                                </div>
+                                <div className='slide slide-img'>
+                                    <img src={slack} alt=''/>
+                                    <div className='info'>
+                                        <h4>Slack Clone</h4>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem quos minus ducimus, eum eveniet magnam officiis deleniti velit cupiditate doloribus similique, repellendus debitis quidem libero voluptatibus reiciendis consequuntur magni? Excepturi!</p>
+                                    </div>
+                                    <a href="https://kmchmm.github.io/slackClone/" target="_blank" rel="noopener noreferrer">
+                                        <button>View Project</button>
+                                    </a>
+                                </div>
+                                <div className='slide slide-img'>
+                                    <img src={homestead} alt=''/>
+                                    <div className='info'>
+                                        <h4>Homestead Clone</h4>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem quos minus ducimus, eum eveniet magnam officiis deleniti velit cupiditate doloribus similique, repellendus debitis quidem libero voluptatibus reiciendis consequuntur magni? Excepturi!</p>
+                                    </div>                                
+                                    <a href="https://kmchmm.github.io/homesteadclone/" target="_blank" rel="noopener noreferrer">
+                                        <button>View Project</button>
+                                    </a>
+                                </div>
+                                <div className='slide-buttons d-flex justify-content-between align-items-center'>
+                                    <i className='bx bxs-left-arrow prev-btn'></i>
+                                    <i className='bx bxs-right-arrow next-btn'></i>
+                                </div>
+                                <div className='slide-buttons-visibility d-flex justify-content-center'>
+                                    <div className='slide-icon active-slide'></div>
+                                    <div className='slide-icon'></div>
+                                    <div className='slide-icon'></div>
+                                </div>
+                            </div>
+                        </div>
 
                 </div>
             </div>

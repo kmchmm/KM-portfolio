@@ -189,7 +189,7 @@
   max-width: 100%;
   width: 100%;
 }
-.btn-wrapper button, .contact-inputs button {
+.btn-wrapper button, .contact-inputs button, .slider button {
   background-color: var(--main-color);
   color: var(--first-font-color);
   border: 1px solid var(--first-font-color);
@@ -202,7 +202,7 @@
   max-width: 100%;
   width: 100%;
 }
-.btn-wrapper button::after, .contact-inputs button::after {
+.btn-wrapper button::after, .contact-inputs button::after, .slider button::after {
   content: "";
   position: absolute;
   left: 0;
@@ -216,14 +216,14 @@
   transition: transform 250ms ease-in;
   z-index: -1;
 }
-.btn-wrapper button:hover, .contact-inputs button:hover {
+.btn-wrapper button:hover, .contact-inputs button:hover, .slider button:hover {
   color: var(--main-color);
 }
-.btn-wrapper button:hover::after, .contact-inputs button:hover::after {
+.btn-wrapper button:hover::after, .contact-inputs button:hover::after, .slider button:hover::after {
   transform: scaleX(1);
   transform-origin: left;
 }
-.btn-wrapper button:first-child {
+.btn-wrapper button:first-child { 
   margin-right: 1em;
 }
 
@@ -569,6 +569,106 @@ svg{
 }
 
 
+.slides-container{
+  min-height: 50vh;
+  height: auto;
+
+}
+.slider{
+  position: relative;
+  width: 1000px;
+  min-height: 500px;
+  margin: 20px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.slider .slide{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  clip-path: circle(0% at 0 50%);
+}
+
+.slider .slide.active-slide{
+  clip-path: circle(150% at 0 50%);
+  transition: 2s;
+}
+.slider .slide img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.slider .slide .info{
+  position: absolute;
+  color: #222;
+  background-color: rgba(255,255,255, 0.95);
+  width: 80%;
+  margin: 50px 0 0 110px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 5px 25px rgb(1 1 1 / 5%);
+
+}
+.slider .slide .info h4{
+  font-size: 2em;
+  font-weight: 800;
+}
+
+.slider .slide .info p{
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.slide-buttons{
+  height: 500px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.slider:hover .slide-buttons{
+  opacity: 1;
+}
+.prev-btn, .next-btn{
+  z-index: 50;
+  font-size: 2em;
+  color: #131313;
+  cursor: pointer;
+  padding: 10px;
+}
+.prev-btn{
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.next-btn{
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.slide-buttons-visibility{
+  z-index: 50;
+}
+
+.slide-buttons-visibility .slide-icon{
+  z-index: 50;
+  background-color: rgba(255,255,255,0.5);
+  width: 20px;
+  height: 10px;
+  transform: translateY(-50px);
+  margin: 0 6px;
+  border-radius: 2px;
+  box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
+  border: none;
+}
+
+.slide-buttons-visibility .slide-icon.active-slide{
+  background-color: var(--second-color);
+}
+.slide-img{
+  background-color: var(--secondary-font-color);
+  color: var(--main-color);
+}
 
 /***********************************/
 /***********CONTACT SECTION*********/
