@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/KM-portfolio/static/css/main.026b8870.css",
-    "main.js": "/KM-portfolio/static/js/main.498e7c54.js",
+    "main.css": "/KM-portfolio/static/css/main.7360fc45.css",
+    "main.js": "/KM-portfolio/static/js/main.cfce180c.js",
     "static/js/787.1ed0c42c.chunk.js": "/KM-portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/boxicons.svg": "/KM-portfolio/static/media/boxicons.9e2b21b135bc7d4c803f.svg",
     "static/media/boxicons.eot": "/KM-portfolio/static/media/boxicons.65a8ce52fc5427e8f94d.eot",
@@ -9,22 +9,25 @@
     "static/media/boxicons.ttf": "/KM-portfolio/static/media/boxicons.db9ddb1898dbd76badca.ttf",
     "static/media/boxicons.woff2": "/KM-portfolio/static/media/boxicons.df635aaf04cd75132f62.woff2",
     "static/media/pixzel.jpg": "/KM-portfolio/static/media/pixzel.dc9df551e03595066854.jpg",
+    "static/media/slack.png": "/KM-portfolio/static/media/slack.4a47068f3e003d111eaa.png",
     "static/media/bootstrap.png": "/KM-portfolio/static/media/bootstrap.eee4b572114093781738.png",
     "static/media/dreamteam.png": "/KM-portfolio/static/media/dreamteam.39ae45e6c57ea299b66a.png",
     "static/media/laravel.png": "/KM-portfolio/static/media/laravel.8b2939ca7ad8851c40a2.png",
     "static/media/react.png": "/KM-portfolio/static/media/react.85d6c18370f290987a01.png",
+    "static/media/calculator.jpg": "/KM-portfolio/static/media/calculator.566baabf94a877f437cb.jpg",
     "static/media/java.png": "/KM-portfolio/static/media/java.e238a2c40e6eaec570bc.png",
+    "static/media/logo.svg": "/KM-portfolio/static/media/logo.b3358b2163da5d8d5138f93e1876cbf5.svg",
     "static/media/css.png": "/KM-portfolio/static/media/css.8aaf7833370a6845139c.png",
     "static/media/html.png": "/KM-portfolio/static/media/html.be50d4568ab0cb01edb8.png",
     "static/media/php.png": "/KM-portfolio/static/media/php.53d348fe7285a52eb6c3.png",
     "static/media/python.png": "/KM-portfolio/static/media/python.9c47735ea0c4a2d20349.png",
     "index.html": "/KM-portfolio/index.html",
-    "main.026b8870.css.map": "/KM-portfolio/static/css/main.026b8870.css.map",
-    "main.498e7c54.js.map": "/KM-portfolio/static/js/main.498e7c54.js.map",
+    "main.7360fc45.css.map": "/KM-portfolio/static/css/main.7360fc45.css.map",
+    "main.cfce180c.js.map": "/KM-portfolio/static/js/main.cfce180c.js.map",
     "787.1ed0c42c.chunk.js.map": "/KM-portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.026b8870.css",
-    "static/js/main.498e7c54.js"
+    "static/css/main.7360fc45.css",
+    "static/js/main.cfce180c.js"
   ]
 }
