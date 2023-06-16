@@ -622,12 +622,12 @@ svg{
   font-weight: 500;
 }
 
-.slide-buttons{
+.slide-arrows{
   height: 500px;
   opacity: 0;
   transition: opacity 0.5s ease;
 }
-.slider:hover .slide-buttons{
+.slider:hover .slide-arrows{
   opacity: 1;
 }
 .prev-btn, .next-btn{
@@ -655,7 +655,7 @@ svg{
   background-color: rgba(255,255,255,0.5);
   width: 20px;
   height: 10px;
-  transform: translateY(-50px);
+  transform: translateY(-25px);
   margin: 0 6px;
   border-radius: 2px;
   box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
@@ -670,6 +670,14 @@ svg{
   color: var(--main-color);
 }
 
+.slide-buttons{
+  width: 100%;
+  height: 100%;
+}
+
+.slide-buttons a{
+  transform: translateY(-50px);
+}
 /***********************************/
 /***********CONTACT SECTION*********/
 /***********************************/
