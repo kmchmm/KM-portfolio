@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/KM-portfolio/static/css/main.7360fc45.css",
-    "main.js": "/KM-portfolio/static/js/main.cfce180c.js",
+    "main.css": "/KM-portfolio/static/css/main.89ec6390.css",
+    "main.js": "/KM-portfolio/static/js/main.dc4e1210.js",
     "static/js/787.1ed0c42c.chunk.js": "/KM-portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/boxicons.svg": "/KM-portfolio/static/media/boxicons.9e2b21b135bc7d4c803f.svg",
     "static/media/boxicons.eot": "/KM-portfolio/static/media/boxicons.65a8ce52fc5427e8f94d.eot",
@@ -22,12 +22,12 @@
     "static/media/php.png": "/KM-portfolio/static/media/php.53d348fe7285a52eb6c3.png",
     "static/media/python.png": "/KM-portfolio/static/media/python.9c47735ea0c4a2d20349.png",
     "index.html": "/KM-portfolio/index.html",
-    "main.7360fc45.css.map": "/KM-portfolio/static/css/main.7360fc45.css.map",
-    "main.cfce180c.js.map": "/KM-portfolio/static/js/main.cfce180c.js.map",
+    "main.89ec6390.css.map": "/KM-portfolio/static/css/main.89ec6390.css.map",
+    "main.dc4e1210.js.map": "/KM-portfolio/static/js/main.dc4e1210.js.map",
     "787.1ed0c42c.chunk.js.map": "/KM-portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7360fc45.css",
-    "static/js/main.cfce180c.js"
+    "static/css/main.89ec6390.css",
+    "static/js/main.dc4e1210.js"
   ]
 }
