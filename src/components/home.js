@@ -289,7 +289,7 @@ export const Home = () => {
                                                             </div>
                                                     </div>
                                                     <div>
-                                                        <button>Download Resume</button>
+                                                        <a href='resume.pdf' download><button>Download Resume</button></a>
                                                     </div>
                                                 </div>
                                             </div>
