@@ -289,7 +289,7 @@ export const Home = () => {
                                                             </div>
                                                     </div>
                                                     <div>
-                                                        <a href='resume.pdf' download><button>Download Resume</button></a>
+                                                        <a href="https://drive.google.com/uc?export=download&id=1uMnJ79b3bKXSO7jVzYXLtDAs9ADzyNQD" download type="application/pdf"><button>Download Resume</button></a>
                                                     </div>
                                                 </div>
                                             </div>
