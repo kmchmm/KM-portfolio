@@ -22,13 +22,27 @@ import '../App.css';
 export const About = () => {
     return (
         <div className='App'>
-                <section id="about">
+            <section id="about">
                 <div className="sec-about">
-                    <div className="about-container">
+                    <div className="about-container d-flex align-items-center justify-content-between">
                         <div>
                             <h1>Hi! I'm Kim Miculob</h1>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, aliquam sequi inventore suscipit veritatis quaerat quis fugiat quam recusandae soluta magni excepturi quidem nesciunt doloremque culpa perferendis. Dignissimos, voluptas vero.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias adipisci ex repellat quo minus dolorem delectus incidunt accusamus earum, modi reprehenderit nemo at consectetur vel officiis. Reiciendis rem qui laudantium? Excepturi minus sint laudantium vero perspiciatis hic rem eos sequi, voluptatem modi doloribus consequatur? Necessitatibus temporibus exercitationem id placeat laudantium error nesciunt?</p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa qui, labore odit quasi quaerat sapiente tempora quo consequatur molestiae distinctio, quos suscipit alias in cupiditate sequi veniam recusandae fugit ad.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum nostrum voluptatum possimus quaerat vitae, quos fuga, tempore dolorem debitis accusantium porro qui perspiciatis enim, amet illum nemo epudiandae adipisci saepe?</p>
+                            <p>Right now I'm based in Iligan City, Philippines.</p>
                         </div>
-                        <div className="text-center about-head-icon"><i className='bx bx-hive'></i></div>
+                        <div>
+                            <iframe title="Embedded Video" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1011425.5586034585!2d123.73618120711254!3d8.011197469058164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3255767813a59999%3A0x93032899c7db13fd!2sTibanga%2C%20Iligan%20City%2C%20Lanao%20del%20Norte!5e0!3m2!1sen!2sph!4v1687098549192!5m2!1sen!2sph" width="600" height="450" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>   
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div className='about-skills'>
+                <div className="text-center about-head-icon"><i className='bx bx-hive'></i></div>
                         <h1 className="text-center">Skills for Development</h1>
                         <div class="carousel-container">
                         <i id="left" className='bx bx-chevron-left arrows'></i>
@@ -146,11 +160,8 @@ export const About = () => {
                         </div>
                             <i id="right" className='bx bx-chevron-right arrows'></i>
                         </div>
-                        
-                    </div>
                 </div>
             </section>
-
             <section id="reachOut">
                 <div className="sec-reachOut">
                     <div className="reachOut-container d-flex justify-content-between align-items-center">
