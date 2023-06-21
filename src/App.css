@@ -721,19 +721,24 @@ svg{
 
 
 .design-container{
-  gap: 2em;
+  gap: 4em;
   width: 90%;
   margin: 0 auto;
+  flex-wrap: wrap;
+
 }
 .about-design{
   background-color: var(--first-font-color);
-  width: 100%;
   flex-direction: column;
+  padding: 1em 0;
 }
 
-.about-design img{
+.about-img-wrapper{
   max-width: 150px;
   min-height: 150px;
+  margin: 0 10em;
+}
+.about-design img{
   width: 100%;
   height: 100%;
   object-fit: contain;
