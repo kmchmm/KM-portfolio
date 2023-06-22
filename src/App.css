@@ -280,7 +280,7 @@
 /***********************************/
 /***********************************/
 .gray-background{
-  background-color: #7e7e7e;
+  background-color: #303848;
   width: 100%;
   min-height: 10vh;
   border: 1px solid #7e7e7e;
@@ -296,7 +296,7 @@
   list-style: disc;
 }
 .white-background h6{
-  background-color: #23395d;
+  background-color: #303848;
   color: var(--first-font-color);
   padding: 15px 0;
   width: 30%;
