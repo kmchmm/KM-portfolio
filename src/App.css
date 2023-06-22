@@ -1089,6 +1089,7 @@ svg{
     justify-content: center;
   }
 
+  
 
   .modal-content {
     width: 85% !important;
@@ -1108,6 +1109,15 @@ svg{
   /***********************************/
   /***********About SECTION*********/
   /***********************************/
+  .about-container {
+    flex-direction: column;
+  }
+  .about-container h1{
+    font-size: 3.5rem;
+  }
+  .testimonies{
+    flex-direction: column;
+  }
   .about-carousel {
     max-width: 100%;
     width: 100%;
@@ -1150,7 +1160,24 @@ svg{
     width: 100% !important;
     font-size: .5rem;
   }
-
+  .about-container h1{
+    font-size: 3.2rem;
+  }
+  .about-container p{
+    font-size: .9rem;
+  }
+  .testimonies-box{
+    padding: 3em;
+  }
+  .testimonies p{
+    font-size: 1em;
+    margin-bottom: 3em;
+  }
+  
+  .about-img-wrapper{
+    margin: 0 8em;
+  }
+  
   .otheruser-infor{
     flex-direction: column;
   }
@@ -1259,6 +1286,9 @@ svg{
     font-size: .8rem;
     padding: 10px 0;
   }
+  .about-img-wrapper{
+    margin: 0 6em;
+  }
   .about-user h6{
     left: 20%;
 
@@ -1287,6 +1317,10 @@ svg{
   .modal-content {
     width: 100% !important;
     font-size: .5rem;
+  }
+
+  .about-img-wrapper{
+    margin: 0 4em;
   }
 
   .otheruser-infor{
