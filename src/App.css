@@ -1319,6 +1319,9 @@ svg{
     font-size: .5rem;
   }
 
+  .reachOut-container-typewrite{
+    flex-direction: column;
+  }
   .about-img-wrapper{
     margin: 0 4em;
   }
