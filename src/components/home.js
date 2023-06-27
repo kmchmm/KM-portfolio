@@ -519,7 +519,129 @@ export const Home = () => {
                                 </div>
                             </div>
                         </div>
-
+                </div>
+                <div className='serverSide-projects'>
+                    <h2 className="text-center">Server-side Projects</h2>
+                    <div className='d-flex justify-content-between ssp-containers-wrapper'>
+                        <div className='ssp-container d-flex justify-content-between'>
+                            <h4 className="text-center">Online Course Enrollment</h4>
+                            <div>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque pariatur impedit porro distinctio autem enim similique accusantium facilis, maxime quo? Recusandae dicta perspiciatis voluptatem. Accusantium molestias hic omnis reprehenderit commodi?</p>
+                            </div>
+                            <div className='ssp-container-third-section'>
+                                <div className='programming-languages'>
+                                    <h6>Languages</h6>
+                                    <div className='d-flex OCR-colors'>
+                                        <div className='OCR-color1'></div>
+                                        <div className='OCR-color2'></div>
+                                        <div className='OCR-color3'></div>
+                                    </div>
+                                    <div className='d-flex justify-content-between OCR-languages'>
+                                        <div>
+                                            <span className='OCR-circle1'><i class='bx bxs-circle'></i></span>
+                                            <span>PHP</span>
+                                        </div>
+                                        <div>
+                                            <span className='OCR-circle2'><i class='bx bxs-circle'></i></span>
+                                            <span>CSS</span>
+                                        </div>
+                                        <div>
+                                            <span className='OCR-circle3'><i class='bx bxs-circle'></i></span>
+                                            <span>Hack</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="https://github.com/kmchmm/enrollment-management" target="_blank" rel="noopener noreferrer">
+                                    <button>View</button>
+                                </a>
+                            </div>
+                        </div>    
+                        <div className='ssp-container d-flex justify-content-between'>
+                            <h4 className="text-center">Camera Detection</h4>
+                            <div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, tenetur! Dolorum, ratione saepe asperiores harum quo eius impedit ex consectetur veniam reprehenderit vel ducimus inventore dignissimos? Sunt mollitia autem sequi?</p>
+                            </div>
+                            <div className='ssp-container-third-section'>
+                                <div className='programming-languages'>
+                                    <h6>Languages</h6>
+                                    <div className='d-flex CD-colors'>
+                                        <div className='CD-color1'></div>
+                                        <div className='CD-color2'></div>
+                                        <div className='CD-color3'></div>
+                                        <div className='CD-color4'></div>
+                                        <div className='CD-color5'></div>
+                                        <div className='CD-color6'></div>
+                                    </div>
+                                    <div className='CD-languages'>
+                                        <div className='d-flex justify-content-between CD-circle-containers'>
+                                            <div>
+                                                <span className='CD-circle1'><i class='bx bxs-circle'></i></span>
+                                                <span>PHP</span>
+                                            </div>
+                                            <div>
+                                                <span className='CD-circle2'><i class='bx bxs-circle'></i></span>
+                                                <span>CSS</span>
+                                            </div>
+                                            <div>
+                                                <span className='CD-circle3'><i class='bx bxs-circle'></i></span>
+                                                <span>PowerShell</span>
+                                            </div>
+                                        </div>
+                                        <div className='d-flex justify-content-between CD-circle-containers'>
+                                            <div>
+                                                <span className='CD-circle4'><i class='bx bxs-circle'></i></span>
+                                                <span>JavaScript</span>
+                                            </div>
+                                            <div>
+                                                <span className='CD-circle5'><i class='bx bxs-circle'></i></span>
+                                                <span>Python</span>
+                                            </div>
+                                            <div>
+                                                <span className='CD-circle6'><i class='bx bxs-circle'></i></span>
+                                                <span>Batchfile</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="https://github.com/kmchmm/cameraDetection" target="_blank" rel="noopener noreferrer">
+                                    <button>View</button>
+                                </a>
+                            </div>
+                        </div>  
+                        <div className='ssp-container d-flex justify-content-between'>
+                            <h4 className="text-center">Archiving System</h4>
+                            <div>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam distinctio accusantium omnis ad exercitationem optio cumque aut! Vel, beatae possimus nulla doloremque est maiores omnis repellat atque nesciunt provident officiis?</p>  
+                            </div>
+                            <div className='ssp-container-third-section'>
+                                <div className='programming-languages'>
+                                    <h6>Languages</h6>
+                                    <div className='d-flex archiving-colors'>
+                                        <div className='archiving-color1'></div>
+                                        <div className='archiving-color2'></div>
+                                        <div className='archiving-color3'></div>
+                                    </div>
+                                    <div className='d-flex justify-content-between archiving-languages'>
+                                        <div>
+                                            <span className='archiving-circle1'><i class='bx bxs-circle'></i></span>
+                                            <span>PHP</span>
+                                        </div>
+                                        <div>
+                                            <span className='archiving-circle2'><i class='bx bxs-circle'></i></span>
+                                            <span>CSS</span>
+                                        </div>
+                                        <div>
+                                            <span className='archiving-circle3'><i class='bx bxs-circle'></i></span>
+                                            <span>JavaScript</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="https://github.com/kmchmm/archiving" target="_blank" rel="noopener noreferrer">
+                                    <button>View</button>
+                                </a>
+                            </div>
+                        </div>  
+                    </div>
                 </div>
             </div>
         </section>
