@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/KM-portfolio/static/css/main.f596805f.css",
+    "main.css": "/KM-portfolio/static/css/main.98b8cf0a.css",
     "main.js": "/KM-portfolio/static/js/main.9b17d517.js",
     "static/js/787.1ed0c42c.chunk.js": "/KM-portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/boxicons.svg": "/KM-portfolio/static/media/boxicons.9e2b21b135bc7d4c803f.svg",
@@ -29,12 +29,12 @@
     "static/media/php.png": "/KM-portfolio/static/media/php.53d348fe7285a52eb6c3.png",
     "static/media/python.png": "/KM-portfolio/static/media/python.9c47735ea0c4a2d20349.png",
     "index.html": "/KM-portfolio/index.html",
-    "main.f596805f.css.map": "/KM-portfolio/static/css/main.f596805f.css.map",
+    "main.98b8cf0a.css.map": "/KM-portfolio/static/css/main.98b8cf0a.css.map",
     "main.9b17d517.js.map": "/KM-portfolio/static/js/main.9b17d517.js.map",
     "787.1ed0c42c.chunk.js.map": "/KM-portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f596805f.css",
+    "static/css/main.98b8cf0a.css",
     "static/js/main.9b17d517.js"
   ]
 }
