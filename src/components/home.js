@@ -6,7 +6,9 @@ import adviceB from './images/advice-brands.png';
 import homestead from './images/logo.svg';
 import slack from './images/slack.png';
 import calculator from './images/calculator.jpg';
-
+import archiving from './images/archiving.png';
+import cameraDetection from './images/cameraDetection.png';
+import ocr from './images/OCR.png';
 
 
 import { Link } from 'react-router-dom';
@@ -524,10 +526,11 @@ export const Home = () => {
                     <h2 className="text-center">Server-side Projects</h2>
                     <div className='d-flex justify-content-between ssp-containers-wrapper'>
                         <div className='ssp-container d-flex justify-content-between'>
-                            <h4 className="text-center">Online Course Enrollment</h4>
-                            <div>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque pariatur impedit porro distinctio autem enim similique accusantium facilis, maxime quo? Recusandae dicta perspiciatis voluptatem. Accusantium molestias hic omnis reprehenderit commodi?</p>
-                            </div>
+                            <div className='ssp-image-container edited-container'>
+                                <img src={ocr} alt=''/>
+                                <h4 className="text-center">Online Course Enrollment</h4>     
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque pariatur impedit porro distinctio autem enim similique accusantium facilis, maxime quo? Recusandae dicta perspiciatis voluptatem. Accusantium molestias hic omnis reprehenderit commodi?</p>                   
+                            </div>    
                             <div className='ssp-container-third-section'>
                                 <div className='programming-languages'>
                                     <h6>Languages</h6>
@@ -557,8 +560,9 @@ export const Home = () => {
                             </div>
                         </div>    
                         <div className='ssp-container d-flex justify-content-between'>
-                            <h4 className="text-center">Camera Detection</h4>
-                            <div>
+                            <div className='ssp-image-container'>
+                                <img src={cameraDetection} alt=''/>
+                                <h4 className="text-center">Camera Detection</h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, tenetur! Dolorum, ratione saepe asperiores harum quo eius impedit ex consectetur veniam reprehenderit vel ducimus inventore dignissimos? Sunt mollitia autem sequi?</p>
                             </div>
                             <div className='ssp-container-third-section'>
@@ -609,10 +613,11 @@ export const Home = () => {
                             </div>
                         </div>  
                         <div className='ssp-container d-flex justify-content-between'>
-                            <h4 className="text-center">Archiving System</h4>
-                            <div>
+                            <div className='ssp-image-container'>
+                                <img src={archiving} alt=''/>
+                                <h4 className="text-center">Archiving System</h4>
                                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam distinctio accusantium omnis ad exercitationem optio cumque aut! Vel, beatae possimus nulla doloremque est maiores omnis repellat atque nesciunt provident officiis?</p>  
-                            </div>
+                            </div>                            
                             <div className='ssp-container-third-section'>
                                 <div className='programming-languages'>
                                     <h6>Languages</h6>

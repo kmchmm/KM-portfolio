@@ -645,10 +645,18 @@ svg{
 .ssp-container:hover{
   cursor: pointer;
 }
+
+.ssp-container img{
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
 .ssp-container h4{
   font-weight: 700;
   margin: 1em 0;
 }
+
 
 /***********programming-languages SECTION*********/
 
