@@ -31,8 +31,8 @@ export const Header = () => {
     return (
         <div className='App'>
                 <div class="menu">
-                    <div className="d-flex align-items-center menu-content">
-                        <ul className="navigation-links d-flex align-items-center">
+                    <div className="menu-content">
+                        <ul className="navigation-links d-flex justify-content-end">
                             <li>
                                 <Link to="/">Home</Link>
                             </li>
