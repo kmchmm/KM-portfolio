@@ -474,41 +474,47 @@ export const Home = () => {
                     <h1 className="text-center">Projects Created</h1>
                         <div className='slides-container d-flex justify-content-center align-content-center'>
                             <div className="slider">
-                                <div className='slide active-slide'>
+                                <div className='slide active-slide slide-img'>
                                     <img src={calculator} alt=''/>
-                                    <div className='info'>
-                                        <h4>Calculator</h4>
-                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem quos minus ducimus, eum eveniet magnam officiis deleniti velit cupiditate doloribus similique, repellendus debitis quidem libero voluptatibus reiciendis consequuntur magni? Excepturi!</p>
-                                    </div>
-                                    <div className='d-flex slide-buttons align-items-end justify-content-center'>
-                                        <a href="https://kmchmm.github.io/calculator/" target="_blank" rel="noopener noreferrer">
-                                            <button>View Project</button>
-                                        </a>
+                                    <div className='d-flex justify-content-between info-wrapper'>
+                                        <div className='info'>
+                                            <h4>Calculator</h4>
+                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem quos minus ducimus, eum eveniet magnam officiis deleniti velit cupiditate doloribus similique, repellendus debitis quidem libero voluptatibus reiciendis consequuntur magni? Excepturi!</p>
+                                        </div>
+                                        <div className='d-flex slide-buttons align-items-end justify-content-center'>
+                                            <a href="https://kmchmm.github.io/calculator/" target="_blank" rel="noopener noreferrer">
+                                                <button>View Project</button>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                                 <div className='slide slide-img'>
                                     <img src={slack} alt=''/>
-                                    <div className='info'>
-                                        <h4>Slack Clone</h4>
-                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem quos minus ducimus, eum eveniet magnam officiis deleniti velit cupiditate doloribus similique, repellendus debitis quidem libero voluptatibus reiciendis consequuntur magni? Excepturi!</p>
-                                    </div>
-                                    <div className='d-flex slide-buttons align-items-end justify-content-center'>
-                                        <a href="https://kmchmm.github.io/slackClone/" target="_blank" rel="noopener noreferrer">
-                                            <button>View Project</button>
-                                        </a>
+                                    <div className='d-flex justify-content-between info-wrapper'>
+                                        <div className='info'>
+                                            <h4>Slack Clone</h4>
+                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem quos minus ducimus, eum eveniet magnam officiis deleniti velit cupiditate doloribus similique, repellendus debitis quidem libero voluptatibus reiciendis consequuntur magni? Excepturi!</p>
+                                        </div>
+                                        <div className='d-flex slide-buttons align-items-end justify-content-center'>
+                                            <a href="https://kmchmm.github.io/slackClone/" target="_blank" rel="noopener noreferrer">
+                                                <button>View Project</button>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                                 <div className='slide slide-img'>
                                     <img src={homestead} alt=''/>
-                                    <div className='info'>
-                                        <h4>Homestead Clone</h4>
-                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem quos minus ducimus, eum eveniet magnam officiis deleniti velit cupiditate doloribus similique, repellendus debitis quidem libero voluptatibus reiciendis consequuntur magni? Excepturi!</p>
-                                    </div>
-                                    <div className='d-flex slide-buttons align-items-end justify-content-center'>
-                                        <a href="https://kmchmm.github.io/homesteadclone/" target="_blank" rel="noopener noreferrer">
-                                            <button>View Project</button>
-                                        </a>
-                                    </div>                                
+                                    <div className='d-flex justify-content-between info-wrapper'>
+                                        <div className='info'>
+                                            <h4>Homestead Clone</h4>
+                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem quos minus ducimus, eum eveniet magnam officiis deleniti velit cupiditate doloribus similique, repellendus debitis quidem libero voluptatibus reiciendis consequuntur magni? Excepturi!</p>
+                                        </div>
+                                        <div className='d-flex slide-buttons align-items-end justify-content-center'>
+                                            <a href="https://kmchmm.github.io/homesteadclone/" target="_blank" rel="noopener noreferrer">
+                                                <button>View Project</button>
+                                            </a>
+                                        </div>   
+                                    </div>                             
                                 </div>
                                 <div className='slide-arrows d-flex justify-content-between align-items-center'>
                                     <i className='bx bxs-left-arrow prev-btn'></i>
