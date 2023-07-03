@@ -642,9 +642,7 @@ svg{
   padding: 15px;
   flex-direction: column;
 }
-.ssp-container:hover{
-  cursor: pointer;
-}
+
 
 .ssp-container img{
   max-width: 100%;
@@ -890,6 +888,7 @@ svg{
 
 .arrows:first-child{
   left: -23px;
+  display: none;
 }
 .arrows:last-child{
   right: -23px;
@@ -902,7 +901,17 @@ svg{
   grid-auto-columns: 21%;
   gap: 1rem;
   overflow-x: hidden; 
+  cursor: pointer;
+  scroll-behavior: smooth;
 }
+.about-carousel.dragging{
+  cursor: grab;
+  scroll-behavior: smooth;
+}
+.about-carousel.dragging .carousel-element{
+  pointer-events: none;
+}
+
 .carousel-element {
   display: grid;
   padding: 1rem;
@@ -1275,7 +1284,7 @@ svg{
     flex-direction: column;
   }
 }
-@media screen and (max-width:1023px){
+@media screen and (max-width:1024px){
   .menu-content ul {
     right: 12%;
   }
@@ -1373,7 +1382,7 @@ svg{
 }
 
 
-@media screen and (max-width:769px){
+@media screen and (max-width:768px){
   .header{
     box-shadow: 0 3px 10px rgba(126, 125, 125, 0.2);
   }
@@ -1463,6 +1472,10 @@ svg{
   /***********************************/
   /***********About SECTION*********/
   /***********************************/
+  .carousel-container{
+    width: 90%;
+    margin: 0 auto;
+  }
   .about-carousel {
     grid-auto-flow: column;
     grid-auto-columns: 50%;
@@ -1540,6 +1553,16 @@ svg{
     left: 20%;
 
   }
+
+    /***********************************/
+  /***********About SECTION*********/
+  /***********************************/
+  .about-carousel {
+    grid-auto-flow: column;
+    grid-auto-columns: 100%;
+
+  }
+
   .user-contacts i{
     padding: 0;
   }

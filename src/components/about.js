@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import html from './images/html.png';
 import css from './images/css.png';
@@ -25,6 +25,75 @@ import { Link } from 'react-router-dom';
 import '../App.css';
 
 export const About = () => {
+
+    useEffect(() => {
+        const carousel = document.querySelector(".about-carousel"),
+        firstImg = carousel.querySelectorAll(".carousel-element")[0],
+        arrowIcons = document.querySelectorAll(".arrows");
+        
+
+        let isDragStart = false, prevPageX, prevScrollLeft, positionDiff;
+
+        const showHideIcons = () => {
+            let scrollWidth = carousel.scrollWidth - carousel.clientWidth;
+            arrowIcons[0].style.display = carousel.scrollLeft === 0 ? "none" : "block";
+            arrowIcons[1].style.display = carousel.scrollLeft === scrollWidth ? "none" : "block";  
+        }
+
+        arrowIcons.forEach(icon => {
+            icon.addEventListener("click", () => {
+                let firstImgWidth = firstImg.clientWidth + 14; 
+                carousel.scrollLeft += icon.id === "left" ? -firstImgWidth : firstImgWidth; 
+                setTimeout(() => showHideIcons(), 60);
+            });
+        });
+
+        const autoSlide = () => {
+
+            if(carousel.scrollLeft === (carousel.scrollWidth - carousel.clientWidth)) return;
+            positionDiff = Math.abs(positionDiff);
+            let firstImgWidth = firstImg.clientWidth + 14;
+            let valDifference = firstImgWidth - positionDiff;
+
+            if(carousel.scrollLeft > prevScrollLeft){
+                return carousel.scrollLeft += positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
+            }
+        }
+        const dragStart = (e) => {
+            isDragStart = true;
+            prevPageX = e.pageX || e.touches[0].pageX;
+            prevScrollLeft = carousel.scrollLeft;
+        }
+
+        const dragging = (e) => {
+            if(!isDragStart) return;
+            e.preventDefault();
+            carousel.classList.add("dragging");
+            positionDiff = (e.pageX || e.touches[0].pageX)- prevPageX;
+            carousel.scrollLeft = prevScrollLeft - positionDiff;   
+            showHideIcons();
+        }
+        
+        const dragStop = () => {
+            isDragStart = false;
+            carousel.classList.remove("dragging");
+            autoSlide();
+        }
+
+        carousel.addEventListener("mousedown", dragStart);
+        carousel.addEventListener("touchstart", dragStart);
+
+        carousel.addEventListener("mousemove", dragging);
+        carousel.addEventListener("touchmove", dragging);
+
+        carousel.addEventListener("mouseup", dragStop);
+        carousel.addEventListener("mouseleave", dragStop);
+        carousel.addEventListener("touchleave", dragStop);
+
+
+      }, []); 
+
+
     return (
         <div className='App'>
             <section id="about">
@@ -73,119 +142,119 @@ export const About = () => {
                         <h1 className="text-center">Skills for Development</h1>
                         <div class="carousel-container">
                         <i id="left" className='bx bx-chevron-left arrows'></i>
-                        <div className="about-carousel snap-inline">
-                            <div className="carousel-element" id="element1">
-                                <img src={html} alt="Icons8" />
-                                <div className="carousel-star d-flex justify-content-center">
-                                    <div className="star"><i className='bx bxs-star' ></i></div>
-                                    <div className="star"><i className='bx bxs-star' ></i></div>
-                                    <div className="star"><i className='bx bxs-star' ></i></div>
-                                    <div className="star"><i className='bx bxs-star' ></i></div>
-                                    <div className="star"><i className='bx bxs-star' ></i></div>
+                            <div className="about-carousel snap-inline">
+                                <div className="carousel-element" id="element1" draggable="false">
+                                    <img src={html} alt="Icons8" />
+                                    <div className="carousel-star d-flex justify-content-center">
+                                        <div className="star"><i className='bx bxs-star' ></i></div>
+                                        <div className="star"><i className='bx bxs-star' ></i></div>
+                                        <div className="star"><i className='bx bxs-star' ></i></div>
+                                        <div className="star"><i className='bx bxs-star' ></i></div>
+                                        <div className="star"><i className='bx bxs-star' ></i></div>
+                                    </div>
+                                </div>
+                                <div className="carousel-element" id="element2" draggable="false">
+                                    <img src={css} alt="Icons8" />
+                                    <div className="carousel-star d-flex justify-content-center">
+                                        <div className="star"><i className='bx bxs-star' ></i></div>
+                                        <div className="star"><i className='bx bxs-star' ></i></div>
+                                        <div className="star"><i className='bx bxs-star' ></i></div>
+                                        <div className="star"><i className='bx bxs-star' ></i></div>
+                                        <div className="star"><i className='bx bxs-star' ></i></div>
+                                    </div>
+                                </div>
+                                <div className="carousel-element" id="element3" draggable="false">
+                                    <img src={javascript} alt="Icons8" />
+                                    <div className="carousel-star d-flex justify-content-center">
+                                        <div className="star"><i className='bx bxs-star' ></i></div>
+                                        <div className="star"><i className='bx bxs-star' ></i></div>
+                                        <div className="star"><i className='bx bxs-star' ></i></div>
+                                        <div className="star"><i className='bx bxs-star' ></i></div>
+                                        <div className="star"><i class='bx bxs-star-half' ></i></div>
+                                    </div>
+                                </div>
+                                <div className="carousel-element" id="element4" draggable="false">
+                                    <img src={bootstrap} alt="Icons8" />
+                                    <div className="carousel-star d-flex justify-content-center">
+                                        <div className="star"><i className='bx bxs-star' ></i></div>
+                                        <div className="star"><i className='bx bxs-star' ></i></div>
+                                        <div className="star"><i className='bx bxs-star' ></i></div>
+                                        <div className="star"><i className='bx bxs-star' ></i></div>
+                                        <div className="star"><i class='bx bxs-star-half' ></i></div>
+                                    </div>
+                                </div>
+                                <div className="carousel-element" id="element5" draggable="false">
+                                    <img src={reactimg} alt="Icons8" />
+                                    <div className="carousel-star d-flex justify-content-center">
+                                        <div className="star"><i className='bx bxs-star' ></i></div>
+                                        <div className="star"><i className='bx bxs-star' ></i></div>
+                                        <div className="star"><i className='bx bxs-star' ></i></div>
+                                        <div className="star"><i className='bx bxs-star' ></i></div>
+                                        <div className="star"><i class='bx bxs-star-half' ></i></div>
+                                    </div>
+                                </div>
+                                <div className="carousel-element" id="element6" draggable="false">
+                                    <img src={nodejsimg} alt="Icons8" />
+                                    <div className="carousel-star d-flex justify-content-center">
+                                        <div className="star"><i className='bx bxs-star' ></i></div>
+                                        <div className="star"><i className='bx bxs-star' ></i></div>
+                                        <div className="star"><i className='bx bxs-star' ></i></div>
+                                        <div className="star"><i className='bx bxs-star' ></i></div>
+                                        <div className="star"><i class='bx bx-star' ></i></div>
+                                    </div>
+                                </div>
+                                <div className="carousel-element" id="element7" draggable="false">
+                                    <img src={php} alt="Icons8" />
+                                    <div className="carousel-star d-flex justify-content-center">
+                                        <div className="star"><i className='bx bxs-star' ></i></div>
+                                        <div className="star"><i className='bx bxs-star' ></i></div>
+                                        <div className="star"><i className='bx bxs-star' ></i></div>
+                                        <div className="star"><i className='bx bxs-star' ></i></div>
+                                        <div className="star"><i class='bx bxs-star-half' ></i></div>
+                                    </div>
+                                </div>
+                                <div className="carousel-element" id="element8" draggable="false">
+                                    <img src={laravel} alt="Icons8" />
+                                    <div className="carousel-star d-flex justify-content-center">
+                                        <div className="star"><i className='bx bxs-star' ></i></div>
+                                        <div className="star"><i className='bx bxs-star' ></i></div>
+                                        <div className="star"><i className='bx bxs-star' ></i></div>
+                                        <div className="star"><i className='bx bxs-star' ></i></div>
+                                        <div className="star"><i class='bx bx-star' ></i></div>
+                                    </div>
+                                </div>
+                                <div className="carousel-element" id="element9" draggable="false">
+                                    <img src={python} alt="Icons8" />
+                                    <div className="carousel-star d-flex justify-content-center">
+                                        <div className="star"><i className='bx bxs-star' ></i></div>
+                                        <div className="star"><i className='bx bxs-star' ></i></div>
+                                        <div className="star"><i className='bx bxs-star' ></i></div>
+                                        <div className="star"><i className='bx bxs-star' ></i></div>
+                                        <div className="star"><i class='bx bx-star' ></i></div>
+                                    </div>
+                                </div>
+                                <div className="carousel-element" id="element10" draggable="false">
+                                    <img src={django} alt="Icons8" />
+                                    <div className="carousel-star d-flex justify-content-center">
+                                        <div className="star"><i className='bx bxs-star' ></i></div>
+                                        <div className="star"><i className='bx bxs-star' ></i></div>
+                                        <div className="star"><i className='bx bxs-star' ></i></div>
+                                        <div className="star"><i className='bx bxs-star' ></i></div>
+                                        <div className="star"><i class='bx bx-star' ></i></div>
+                                    </div>
+                                </div>
+                                <div className="carousel-element" id="element11" draggable="false">
+                                    <img src={java} alt="Icons8" />
+                                    <div className="carousel-star d-flex justify-content-center">
+                                        <div className="star"><i className='bx bxs-star' ></i></div>
+                                        <div className="star"><i className='bx bxs-star' ></i></div>
+                                        <div className="star"><i className='bx bxs-star' ></i></div>
+                                        <div className="star"><i className='bx bxs-star' ></i></div>
+                                        <div className="star"><i class='bx bx-star' ></i></div>
+                                    </div>
                                 </div>
                             </div>
-                            <div className="carousel-element" id="element2">
-                                <img src={css} alt="Icons8" />
-                                <div className="carousel-star d-flex justify-content-center">
-                                    <div className="star"><i className='bx bxs-star' ></i></div>
-                                    <div className="star"><i className='bx bxs-star' ></i></div>
-                                    <div className="star"><i className='bx bxs-star' ></i></div>
-                                    <div className="star"><i className='bx bxs-star' ></i></div>
-                                    <div className="star"><i className='bx bxs-star' ></i></div>
-                                </div>
-                            </div>
-                            <div className="carousel-element" id="element3">
-                                <img src={javascript} alt="Icons8" />
-                                <div className="carousel-star d-flex justify-content-center">
-                                    <div className="star"><i className='bx bxs-star' ></i></div>
-                                    <div className="star"><i className='bx bxs-star' ></i></div>
-                                    <div className="star"><i className='bx bxs-star' ></i></div>
-                                    <div className="star"><i className='bx bxs-star' ></i></div>
-                                    <div className="star"><i class='bx bxs-star-half' ></i></div>
-                                </div>
-                            </div>
-                            <div className="carousel-element" id="element4">
-                                <img src={bootstrap} alt="Icons8" />
-                                <div className="carousel-star d-flex justify-content-center">
-                                    <div className="star"><i className='bx bxs-star' ></i></div>
-                                    <div className="star"><i className='bx bxs-star' ></i></div>
-                                    <div className="star"><i className='bx bxs-star' ></i></div>
-                                    <div className="star"><i className='bx bxs-star' ></i></div>
-                                    <div className="star"><i class='bx bxs-star-half' ></i></div>
-                                </div>
-                            </div>
-                            <div className="carousel-element" id="element5">
-                                <img src={reactimg} alt="Icons8" />
-                                <div className="carousel-star d-flex justify-content-center">
-                                    <div className="star"><i className='bx bxs-star' ></i></div>
-                                    <div className="star"><i className='bx bxs-star' ></i></div>
-                                    <div className="star"><i className='bx bxs-star' ></i></div>
-                                    <div className="star"><i className='bx bxs-star' ></i></div>
-                                    <div className="star"><i class='bx bxs-star-half' ></i></div>
-                                </div>
-                            </div>
-                            <div className="carousel-element" id="element6">
-                                <img src={nodejsimg} alt="Icons8" />
-                                <div className="carousel-star d-flex justify-content-center">
-                                    <div className="star"><i className='bx bxs-star' ></i></div>
-                                    <div className="star"><i className='bx bxs-star' ></i></div>
-                                    <div className="star"><i className='bx bxs-star' ></i></div>
-                                    <div className="star"><i className='bx bxs-star' ></i></div>
-                                    <div className="star"><i class='bx bx-star' ></i></div>
-                                </div>
-                            </div>
-                            <div className="carousel-element" id="element7">
-                                <img src={php} alt="Icons8" />
-                                <div className="carousel-star d-flex justify-content-center">
-                                    <div className="star"><i className='bx bxs-star' ></i></div>
-                                    <div className="star"><i className='bx bxs-star' ></i></div>
-                                    <div className="star"><i className='bx bxs-star' ></i></div>
-                                    <div className="star"><i className='bx bxs-star' ></i></div>
-                                    <div className="star"><i class='bx bxs-star-half' ></i></div>
-                                </div>
-                            </div>
-                            <div className="carousel-element" id="element8">
-                                <img src={laravel} alt="Icons8" />
-                                <div className="carousel-star d-flex justify-content-center">
-                                    <div className="star"><i className='bx bxs-star' ></i></div>
-                                    <div className="star"><i className='bx bxs-star' ></i></div>
-                                    <div className="star"><i className='bx bxs-star' ></i></div>
-                                    <div className="star"><i className='bx bxs-star' ></i></div>
-                                    <div className="star"><i class='bx bx-star' ></i></div>
-                                </div>
-                            </div>
-                            <div className="carousel-element" id="element9">
-                                <img src={python} alt="Icons8" />
-                                <div className="carousel-star d-flex justify-content-center">
-                                    <div className="star"><i className='bx bxs-star' ></i></div>
-                                    <div className="star"><i className='bx bxs-star' ></i></div>
-                                    <div className="star"><i className='bx bxs-star' ></i></div>
-                                    <div className="star"><i className='bx bxs-star' ></i></div>
-                                    <div className="star"><i class='bx bx-star' ></i></div>
-                                </div>
-                            </div>
-                            <div className="carousel-element" id="element10">
-                                <img src={django} alt="Icons8" />
-                                <div className="carousel-star d-flex justify-content-center">
-                                    <div className="star"><i className='bx bxs-star' ></i></div>
-                                    <div className="star"><i className='bx bxs-star' ></i></div>
-                                    <div className="star"><i className='bx bxs-star' ></i></div>
-                                    <div className="star"><i className='bx bxs-star' ></i></div>
-                                    <div className="star"><i class='bx bx-star' ></i></div>
-                                </div>
-                            </div>
-                            <div className="carousel-element" id="element11">
-                                <img src={java} alt="Icons8" />
-                                <div className="carousel-star d-flex justify-content-center">
-                                    <div className="star"><i className='bx bxs-star' ></i></div>
-                                    <div className="star"><i className='bx bxs-star' ></i></div>
-                                    <div className="star"><i className='bx bxs-star' ></i></div>
-                                    <div className="star"><i className='bx bxs-star' ></i></div>
-                                    <div className="star"><i class='bx bx-star' ></i></div>
-                                </div>
-                            </div>
-                        </div>
-                            <i id="right" className='bx bx-chevron-right arrows'></i>
+                                <i id="right" className='bx bx-chevron-right arrows'></i>
                         </div>
                 </div>
                 <div>
