@@ -954,7 +954,7 @@ svg{
 .about-design{
   background-color: var(--first-font-color);
   flex-direction: column;
-  padding: 1em 0;
+  padding: 2em 0 3em;
 }
 
 .about-img-wrapper{

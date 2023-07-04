@@ -264,36 +264,15 @@ export const About = () => {
                             <div className='about-img-wrapper'>
                                 <img src={figma} alt="Icons8" />
                             </div>
-                            <div className="carousel-star d-flex justify-content-center">
-                                <div className="star"><i className='bx bxs-star' ></i></div>
-                                <div className="star"><i className='bx bxs-star' ></i></div>
-                                <div className="star"><i className='bx bxs-star' ></i></div>
-                                <div className="star"><i className='bx bxs-star' ></i></div>
-                                <div className="star"><i class='bx bx-star' ></i></div>
-                            </div>
                         </div>
                         <div className="about-design d-flex justify-content-center align-items-center" id="">
                             <div className='about-img-wrapper'>
                                 <img src={adobe} alt="Icons8" />
                             </div>
-                            <div className="carousel-star d-flex justify-content-center">
-                                <div className="star"><i className='bx bxs-star' ></i></div>
-                                <div className="star"><i className='bx bxs-star' ></i></div>
-                                <div className="star"><i className='bx bxs-star' ></i></div>
-                                <div className="star"><i className='bx bxs-star' ></i></div>
-                                <div className="star"><i class='bx bx-star' ></i></div>
-                            </div>
                         </div>
                         <div className="about-design d-flex justify-content-center align-items-center" id="">
                             <div className='about-img-wrapper'>
                                 <img src={canva} alt="Icons8" />
-                            </div>
-                            <div className="carousel-star d-flex justify-content-center">
-                                <div className="star"><i className='bx bxs-star' ></i></div>
-                                <div className="star"><i className='bx bxs-star' ></i></div>
-                                <div className="star"><i className='bx bxs-star' ></i></div>
-                                <div className="star"><i className='bx bxs-star' ></i></div>
-                                <div className="star"><i class='bx bx-star' ></i></div>
                             </div>
                         </div>
                     </div>
