@@ -263,6 +263,14 @@ export const Home = () => {
                                                                         Quality Assurance • Advice Brands
                                                                     </div>
                                                                 </div>
+                                                                <div className='year'>
+                                                                    <div>
+                                                                        April 2023 - July 2023
+                                                                    </div>
+                                                                    <div>
+                                                                        Fullstack Developer • Pixzel Digital
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                         <div className='projects-created'>
