@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/KM-portfolio/static/css/main.16768cf7.css",
-    "main.js": "/KM-portfolio/static/js/main.9e17fb3d.js",
+    "main.js": "/KM-portfolio/static/js/main.d0f09dbe.js",
     "static/js/787.1ed0c42c.chunk.js": "/KM-portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/boxicons.svg": "/KM-portfolio/static/media/boxicons.9e2b21b135bc7d4c803f.svg",
     "static/media/jane-doe.jpg": "/KM-portfolio/static/media/jane-doe.8bc8d92b3606b5a52330.jpg",
@@ -30,11 +30,11 @@
     "static/media/python.png": "/KM-portfolio/static/media/python.9c47735ea0c4a2d20349.png",
     "index.html": "/KM-portfolio/index.html",
     "main.16768cf7.css.map": "/KM-portfolio/static/css/main.16768cf7.css.map",
-    "main.9e17fb3d.js.map": "/KM-portfolio/static/js/main.9e17fb3d.js.map",
+    "main.d0f09dbe.js.map": "/KM-portfolio/static/js/main.d0f09dbe.js.map",
     "787.1ed0c42c.chunk.js.map": "/KM-portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.16768cf7.css",
-    "static/js/main.9e17fb3d.js"
+    "static/js/main.d0f09dbe.js"
   ]
 }
