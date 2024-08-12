@@ -482,7 +482,7 @@ export const Home = () => {
                     <h1 className="text-center">Projects Created</h1>
                         <div className='slides-container d-flex justify-content-center align-content-center'>
                             <div className="slider">
-                                <div className='slide active-slide slide-img'>
+                                {/* <div className='slide active-slide slide-img'>
                                     <img src={calculator} alt=''/>
                                     <div className='d-flex justify-content-between info-wrapper'>
                                         <div className='info'>
@@ -495,8 +495,8 @@ export const Home = () => {
                                             </a>
                                         </div>
                                     </div>
-                                </div>
-                                <div className='slide slide-img'>
+                                </div> */}
+                                <div className='slide active-slide slide-img'>
                                     <img src={slack} alt=''/>
                                     <div className='d-flex justify-content-between info-wrapper'>
                                         <div className='info'>
